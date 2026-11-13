@@ -92,7 +92,7 @@ See `MODEL_DECLARATION.csv`, `evidence/gemma_4_31b.md` and `logs/model_usage.csv
 
 The coding assistant was used with the organizer's approval given on the day. It does not run inside the pipeline and did not produce answers directly. Both models are listed in `MODEL_DECLARATION.csv`.
 
-All model calls of the day, including experiments, are in `logs/model_usage.csv`: about 2.6 million prompt tokens in total, most of them from the fallback evaluation (each code-writing call carries the table descriptions and business rules, about 9,000 tokens).
+All model calls of the day, including experiments, are in `logs/model_usage.csv`: about 2.8 million prompt tokens in total, most of them from the fallback evaluation (each code-writing call carries the table descriptions and business rules, about 9,000 tokens).
 
 Measured for the final three-vote Stage 1 run: 30 model calls of 20 questions each, about 132,000 prompt tokens and 22,000 completion tokens, about 310 seconds of model time (from the gateway's usage fields and wall-clock time per call, recorded in `logs/model_usage.csv`). Cost: not measured. The deterministic calculation of all 200 answers takes about two minutes on a laptop CPU; memory: not measured.
 
