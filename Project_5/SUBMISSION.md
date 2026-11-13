@@ -11,7 +11,7 @@ Public and final submission filenames and SHA-256 hashes:
 - `Project_5/public_answers.csv`: `13bce1c97d87da7b15bb562433fee8841914cdb583ac8eb80b43304b4272628e`
 - `Project_5/final_answers.csv`: `f6c4d5c9fe33fd427b8a1dd1c08b9e5dd30d60b276f77544f903b9af914f42ab`
 
-Code revision used for your calculations: `0a3a606`
+Code revision used for your calculations: `1d5f562` (Stage 1 answers were locked at `0a3a606` and are unchanged)
 
 ## 1. Approach in one paragraph
 
