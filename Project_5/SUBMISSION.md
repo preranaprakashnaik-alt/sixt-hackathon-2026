@@ -11,7 +11,7 @@ Public and final submission filenames and SHA-256 hashes:
 - `Project_5/public_answers.csv`: `13bce1c97d87da7b15bb562433fee8841914cdb583ac8eb80b43304b4272628e`
 - `Project_5/final_answers.csv`: pending (Stage 2 not yet released)
 
-Code revision used for your calculations: `f03116e`
+Code revision used for your calculations: `fca553c`
 
 ## 1. Approach in one paragraph
 
@@ -68,7 +68,8 @@ Our own checks (there has been no official feedback on scored answers):
 - **Exchange rates.** A missing rate raises an error; it is never replaced by 1.
 - **Rounding.** Full precision is kept until the final formatting step (two decimals, ties to even); counts must be integral.
 - **Optimization cases.** Two independent exact methods (branch-and-bound and an integer program) agree on all 15 cases, baseline and counterfactual.
-- **Routing.** The model routed every question three times; all three votes agreed on all 200 questions, and the resulting answers equal those from the independent keyword parser on all 200.
+- **Routing.** The model routed every question three times, with the questions shuffled into different batches for each vote (the gateway replays identical requests, so unshuffled repeats would not be independent). All three votes agreed on all 200 questions, and the resulting answers equal those from the independent keyword parser on all 200.
+- **Model-only baseline.** Given the raw tables of the three public toy examples and asked to reason and calculate by itself, Gemma 4 31B answered all three correctly at three different temperature settings (`pipeline/toy_examples.py`). The question wording included the rule hints from the published explanations. These are tiny tables; the result does not show that the model could do the same on the full dataset.
 - **CSV structure.** The organizers' `check_submission.py` reports 200 rows and 200 non-blank answers.
 
 Representative errors found and fixed: the keyword parser first read "All families" from the explanatory sentence of every price-variance question, giving the same answer for three different product families; the fix was to read the family named at the start of the question.
@@ -86,7 +87,7 @@ See `MODEL_DECLARATION.csv`, `evidence/gemma_4_31b.md` and `logs/model_usage.csv
 
 The coding assistant was used with the organizer's approval given on the day. It does not run inside the pipeline and did not produce answers directly. Both models are listed in `MODEL_DECLARATION.csv`.
 
-Measured for the final three-vote Stage 1 run: 30 model calls of 20 questions each, about 132,000 prompt tokens and 22,000 completion tokens, about 70 seconds of model time (from the gateway's usage fields and wall-clock time per call, recorded in `logs/model_usage.csv`). Cost: not measured. The deterministic calculation of all 200 answers takes about two minutes on a laptop CPU; memory: not measured.
+Measured for the final three-vote Stage 1 run: 30 model calls of 20 questions each, about 132,000 prompt tokens and 22,000 completion tokens, about 310 seconds of model time (from the gateway's usage fields and wall-clock time per call, recorded in `logs/model_usage.csv`). Cost: not measured. The deterministic calculation of all 200 answers takes about two minutes on a laptop CPU; memory: not measured.
 
 ## 5. Small-model bonus declaration
 
