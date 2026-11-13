@@ -49,7 +49,7 @@
     <div class="cols">
       <div class="col card"><h3>The problem</h3><p>"What was net revenue?" hides a dozen rules: which orders count, which exchange rate, how discounts and refunds are split. One slip gives a confident wrong number.</p></div>
       <div class="col card"><h3>Our idea</h3><p>Let a small model do what it is good at: understanding the question. Let tested code do what must be exact: applying the rules and the arithmetic.</p></div>
-      <div class="col card dark"><h3>Result so far</h3><p>All 200 Stage 1 questions answered. 10 of 10 organizer-solved examples reproduced exactly.</p></div>
+      <div class="col card dark"><h3>Result so far</h3><p>All 400 questions answered across both stages. 10 of 10 organizer-solved examples reproduced exactly.</p></div>
     </div>
   </div>
   <div class="foot"><span>Two Braincells · Prerana Prakash Naik, Harisankar Karamchand</span><span>1 / 5</span></div>
@@ -63,7 +63,7 @@
     <div class="box"><b>1. Question</b>"What was net revenue from customers in Spain in Q2 2024?"</div><div class="arrow">➜</div>
     <div class="box model"><b>2. Gemma 4 31B routes</b><span class="mono">{"recipe": "net_revenue", "params": {"country": "Spain", "period": "Q2"}}</span></div><div class="arrow">➜</div>
     <div class="box"><b>3. Validator</b>Recipe exists? Values exist in the data? If not, ask again.</div><div class="arrow">➜</div>
-    <div class="box code"><b>4. Tested code</b>70 recipes on a verified data layer where every business rule is applied once.</div><div class="arrow">➜</div>
+    <div class="box code"><b>4. Tested code</b>78 recipes on a verified data layer where every business rule is applied once.</div><div class="arrow">➜</div>
     <div class="box"><b>5. Answer CSV</b>Formatted once: two decimals, exact counts, dates, true/false.</div>
   </div>
   <div class="cols">
@@ -84,15 +84,15 @@
         <tr><th>Check</th><th>Result</th></tr>
         <tr><td>Organizer-solved practice examples reproduced exactly</td><td class="n">10 / 10</td></tr>
         <tr><td>Gemma wrote the calculation itself with the recipes hidden; its answer matched ours</td><td class="n">58 / 59</td></tr>
-        <tr><td>Optimization cases: two independent exact solvers agree (baseline and counterfactual)</td><td class="n">30 / 30</td></tr>
-        <tr><td>Routing: three independent votes agree, and match a model-free keyword parser</td><td class="n">200 / 200</td></tr>
-        <tr><td>Renamed-column rehearsal for the final stage: columns mapped correctly by Gemma</td><td class="n">29 / 29</td></tr>
-        <tr><td>Invented questions with no recipe, answered by the fallback</td><td class="n">3 / 3</td></tr>
-      </table>
+        <tr><td>Optimization cases, both stages: two independent exact solvers agree</td><td class="n">60 / 60</td></tr>
+        <tr><td>Routing, both stages: three independent votes agree, and match a model-free keyword parser</td><td class="n">400 / 400</td></tr>
+        <tr><td>Final stage: renamed columns mapped by Gemma and passing our checks</td><td class="n">79 / 79</td></tr>
+        <tr><td>Final stage: new question types re-derived independently by Gemma, matching our new recipes</td><td class="n">26 / 27</td></tr>
+              </table>
     </div>
     <div class="col">
       <div class="card" style="margin-bottom:0.15in"><h3>Built-in guards</h3><ul><li>Joins declare expected cardinality; keys asserted unique</li><li>Refunds must sum to the eligible total: each counted once</li><li>Missing exchange rate is an error, never 1</li></ul></div>
-      <div class="card dark"><h3>What we do not know</h3><ul><li>Our real accuracy on the 200 scored questions</li><li>The 20 simulation answers have no independent check</li><li>Agreement between two implementations is not proof</li></ul></div>
+      <div class="card dark"><h3>What we do not know</h3><ul><li>Our real accuracy on the 400 scored questions</li><li>The 40 simulation answers have no independent check</li><li>Agreement between two implementations is not proof</li></ul></div>
     </div>
   </div>
   <div class="foot"><span>Two Braincells · Project 5</span><span>3 / 5</span></div>
@@ -103,9 +103,9 @@
   <h1>A small model is enough</h1>
   <h2>Gemma 4 31B: 30.7 billion parameters, open weights, under the 40B limit. It is the only model inside the pipeline.</h2>
   <div class="cols" style="margin-bottom:0.25in">
-    <div class="col card"><div class="big">30</div><p>model calls to route all 200 questions three times</p></div>
-    <div class="col card"><div class="big">~770</div><p>tokens per question in the final Stage 1 run</p></div>
-    <div class="col card"><div class="big">~2 min</div><p>to compute all 200 answers on a laptop CPU</p></div>
+    <div class="col card"><div class="big">30</div><p>model calls per stage to route 200 questions three times</p></div>
+    <div class="col card"><div class="big">~770</div><p>tokens per question for routing</p></div>
+    <div class="col card"><div class="big">~2 min</div><p>to compute 200 answers on a laptop CPU</p></div>
     <div class="col card"><div class="big">0</div><p>numbers produced by the model on the main path</p></div>
   </div>
   <div class="cols">
@@ -122,8 +122,8 @@
   <h2>Define a metric once as tested code. Then anyone can ask for it in plain language.</h2>
   <div class="cols">
     <div class="col card"><h3>Business value</h3><ul><li><b>Trustworthy:</b> every number comes from versioned, tested code</li><li><b>Auditable:</b> each answer records which calculation and parameters produced it</li><li><b>Cheap:</b> a small model, under 1,000 tokens per question</li><li><b>Replaceable:</b> swap the model without changing any result</li></ul></div>
-    <div class="col card"><h3>Honest limits</h3><ul><li>The recipe library was built around the question types we saw</li><li>The code-writing fallback is less reliable than a tested recipe, and was measured on questions whose hard parts the data layer already solves</li><li>A new optimization or simulation task still needs hand-written code</li></ul></div>
-    <div class="col card dark"><h3>Next steps</h3><ul><li>Run the same pipeline on the final stage: new rules, renamed columns</li><li>Second independent implementation of the hardest metrics</li><li>Test the fallback on questions that need new base tables</li><li>Method report as an arXiv manuscript with the organizers</li></ul></div>
+    <div class="col card"><h3>Honest limits</h3><ul><li>The final stage brought 8 new question types (27 questions); we wrote the new recipes ourselves on the day</li><li>The code-writing fallback is less reliable than a tested recipe, and was measured on questions whose hard parts the data layer already solves</li><li>A new optimization or simulation task still needs hand-written code</li></ul></div>
+    <div class="col card dark"><h3>Next steps</h3><ul><li>Let the fallback answer new question types unaided, now that it matched our recipes on 26 of 27</li><li>Second independent implementation of the hardest metrics</li><li>Test the fallback on questions that need new base tables</li><li>Method report as an arXiv manuscript with the organizers</li></ul></div>
   </div>
   <div class="foot"><span>Two Braincells · Project 5 · code and evidence: Project_5/ in our repository</span><span>5 / 5</span></div>
 </section>

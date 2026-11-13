@@ -1,0 +1,531 @@
+{
+ "summary": {
+  "questions": 27,
+  "model_code_agrees_with_recipe": 27,
+  "by_recipe": {
+   "avg_days_touch_to_order": "3/3",
+   "channel_marketing_roi_pct": "4/4",
+   "cohort_retention_fully_observed_pct": "4/4",
+   "latest_refund_date": "3/3",
+   "refund_fx_counterfactual": "4/4",
+   "revenue_repeat_late_breached": "4/4",
+   "top_decile_revenue_share": "4/4",
+   "valid_order_count": "1/1"
+  }
+ },
+ "results": [
+  {
+   "question_id": "F015",
+   "recipe": "avg_days_touch_to_order",
+   "recipe_answer": "12.82",
+   "agrees": true,
+   "answer": "12.82",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "12.82",
+    "12.82",
+    "12.82"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "F040",
+   "recipe": "avg_days_touch_to_order",
+   "recipe_answer": "16.02",
+   "agrees": true,
+   "answer": "16.02",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "16.02",
+    "16.02",
+    "16.02"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "F046",
+   "recipe": "latest_refund_date",
+   "recipe_answer": "2024-12-24",
+   "agrees": true,
+   "answer": "2024-12-24",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "2024-12-24",
+    "2024-12-24",
+    "2024-12-24"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "F047",
+   "recipe": "latest_refund_date",
+   "recipe_answer": "2024-12-14",
+   "agrees": true,
+   "answer": "2024-12-14",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "2024-12-14",
+    "2024-12-14",
+    "2024-12-14"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "F057",
+   "recipe": "valid_order_count",
+   "recipe_answer": "18",
+   "agrees": true,
+   "answer": "18",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "18",
+    "18",
+    "18"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "F062",
+   "recipe": "latest_refund_date",
+   "recipe_answer": "2024-12-21",
+   "agrees": true,
+   "answer": "2024-12-21",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "2024-12-21",
+    "2024-12-21",
+    "2024-12-21"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "F068",
+   "recipe": "avg_days_touch_to_order",
+   "recipe_answer": "15.03",
+   "agrees": true,
+   "answer": "15.03",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "15.03",
+    "15.03",
+    "15.03"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "F081",
+   "recipe": "revenue_repeat_late_breached",
+   "recipe_answer": "58826.17",
+   "agrees": true,
+   "answer": "58826.17",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "58826.17",
+    "58826.17",
+    "58826.17"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "F082",
+   "recipe": "revenue_repeat_late_breached",
+   "recipe_answer": "66772.38",
+   "agrees": true,
+   "answer": "66772.38",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "66772.38",
+    "66772.38",
+    "66772.38"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "F083",
+   "recipe": "revenue_repeat_late_breached",
+   "recipe_answer": "64900.14",
+   "agrees": true,
+   "answer": "64900.14",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "64900.14",
+    "64900.14",
+    "64900.14"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "F084",
+   "recipe": "revenue_repeat_late_breached",
+   "recipe_answer": "63701.99",
+   "agrees": true,
+   "answer": "63701.99",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "63701.99",
+    "63701.99",
+    "63701.99"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "F085",
+   "recipe": "top_decile_revenue_share",
+   "recipe_answer": "27.57",
+   "agrees": true,
+   "answer": "27.57",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "27.57",
+    "27.57",
+    "27.57"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "F086",
+   "recipe": "top_decile_revenue_share",
+   "recipe_answer": "26.80",
+   "agrees": true,
+   "answer": "26.80",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "26.80",
+    "26.80",
+    "26.80"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "F087",
+   "recipe": "top_decile_revenue_share",
+   "recipe_answer": "26.80",
+   "agrees": true,
+   "answer": "26.80",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "26.80",
+    "26.80",
+    "26.80"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "F088",
+   "recipe": "top_decile_revenue_share",
+   "recipe_answer": "27.96",
+   "agrees": true,
+   "answer": "27.96",
+   "agreement": 0.3333333333333333,
+   "accepted": false,
+   "samples": [
+    "27.96",
+    null,
+    "26.81"
+   ],
+   "errors": [
+    null,
+    "TypeError: 'Data' object is not subscriptable",
+    null
+   ]
+  },
+  {
+   "question_id": "F089",
+   "recipe": "channel_marketing_roi_pct",
+   "recipe_answer": "316.35",
+   "agrees": true,
+   "answer": "316.35",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "316.35",
+    "316.35",
+    "316.35"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "F090",
+   "recipe": "channel_marketing_roi_pct",
+   "recipe_answer": "501.14",
+   "agrees": true,
+   "answer": "501.14",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "501.14",
+    "501.14",
+    "501.14"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "F091",
+   "recipe": "channel_marketing_roi_pct",
+   "recipe_answer": "301.33",
+   "agrees": true,
+   "answer": "301.33",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "301.33",
+    "301.33",
+    "301.33"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "F092",
+   "recipe": "channel_marketing_roi_pct",
+   "recipe_answer": "391.82",
+   "agrees": true,
+   "answer": "391.82",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "391.82",
+    "391.82",
+    "391.82"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "F093",
+   "recipe": "cohort_retention_fully_observed_pct",
+   "recipe_answer": "35.14",
+   "agrees": true,
+   "answer": "35.14",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "35.14",
+    "35.14",
+    "35.14"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "F094",
+   "recipe": "cohort_retention_fully_observed_pct",
+   "recipe_answer": "33.33",
+   "agrees": true,
+   "answer": "33.33",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "33.33",
+    "33.33",
+    "33.33"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "F095",
+   "recipe": "cohort_retention_fully_observed_pct",
+   "recipe_answer": "34.48",
+   "agrees": true,
+   "answer": "34.48",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "34.48",
+    "34.48",
+    "34.48"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "F096",
+   "recipe": "cohort_retention_fully_observed_pct",
+   "recipe_answer": "34.29",
+   "agrees": true,
+   "answer": "34.29",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "34.29",
+    "34.29",
+    "34.29"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "F097",
+   "recipe": "refund_fx_counterfactual",
+   "recipe_answer": "496.76",
+   "agrees": true,
+   "answer": "496.76",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "496.76",
+    "496.76",
+    "496.76"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "F098",
+   "recipe": "refund_fx_counterfactual",
+   "recipe_answer": "121.74",
+   "agrees": true,
+   "answer": "121.74",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "121.74",
+    "121.74",
+    "121.74"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "F099",
+   "recipe": "refund_fx_counterfactual",
+   "recipe_answer": "181.89",
+   "agrees": true,
+   "answer": "181.89",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "181.89",
+    "181.89",
+    "181.89"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "F100",
+   "recipe": "refund_fx_counterfactual",
+   "recipe_answer": "800.39",
+   "agrees": true,
+   "answer": "800.39",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "800.39",
+    "800.39",
+    "800.39"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  }
+ ]
+}

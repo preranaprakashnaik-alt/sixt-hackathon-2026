@@ -44,6 +44,7 @@ def vocabulary(D):
 
 
 NO_MATCH = "no_matching_recipe"
+MARKETING_CHANNEL_RECIPES = ("top_attributed_campaign", "channel_marketing_roi_pct")
 PARAM_VOCAB = {"country": "country", "region": "region", "segment": "segment", "industry": "industry",
                "category": "category", "family": "family", "carrier": "carrier", "campaign": "campaign",
                "issue_type": "issue_type", "priority": "priority", "support_channel": "support_channel",
@@ -64,13 +65,14 @@ def validate(route, vocab):
             continue
         v = str(v).strip() if not isinstance(v, (int, float)) else v
         if k == "channel":
-            vk = "channel_marketing" if name == "top_attributed_campaign" else "channel_acquisition"
+            vk = "channel_marketing" if name in MARKETING_CHANNEL_RECIPES else "channel_acquisition"
         else:
             vk = PARAM_VOCAB.get(k)
         if vk:
             match = [x for x in vocab[vk] if x.lower() == str(v).lower()]
             if not match:
                 if k == "region" and str(v).lower().startswith("all"):
+                    params[k] = "All regions"
                     continue
                 return None, f"{k}={v!r} not in data vocabulary {vocab[vk]}"
             v = match[0]
@@ -232,6 +234,11 @@ KEYWORDS = [
     ("standard-cost EUR value", "inventory_value"), ("how many product/warehouse pairs", "inventory_below_reorder"),
     ("replenishment units", "inventory_reorder_units"), ("are restockable", "returns_restockable_pct"),
     ("total recovery value", "returns_recovered_value"),
+    ("average number of days between touch and order", "avg_days_touch_to_order"),
+    ("latest approved refund date", "latest_refund_date"), ("How many valid orders were placed", "valid_order_count"),
+    ("at least two lifetime valid orders", "revenue_repeat_late_breached"), ("top ceil(10%", "top_decile_revenue_share"),
+    ("attributed order margin", "channel_marketing_roi_pct"), ("complete days before the reference", "cohort_retention_fully_observed_pct"),
+    ("order month FX rate", "refund_fx_counterfactual"),
     ("opened within 14 days after a late shipment", "tickets_after_late_delivery_breach_pct"),
     ("late shipments handled by", "carrier_weighted_delay"), ("which carrier has the highest", "top_delay_carrier"),
     ("highest margin rate", "top_margin_category"), ("margin rate percentage", "margin_rate_pct"),
@@ -274,7 +281,7 @@ def rules_route(question, vocab):
     months = [m for m in re.findall(r"(?<!\d)(2024-\d{2})(?!-\d)", q)]
     want = RECIPES[name]["params"]
     if "region" in want:
-        p["region"] = find("region")
+        p["region"] = find("region") or ("All regions" if "All regions" in q else None)
     if "country" in want and not p.get("region"):
         p["country"] = find("country")
     if "period" in want:
@@ -286,7 +293,7 @@ def rules_route(question, vocab):
     if "threshold_pct" in want:
         p["threshold_pct"] = float(re.search(r"at least (\d+(?:\.\d+)?)%", q).group(1))
     if "days" in want:
-        p["days"] = int(re.search(r"within (\d+) days", q).group(1))
+        p["days"] = int(re.search(r"(?:within|least|than) (\d+) (?:complete )?days", q).group(1))
     for k in ("segment", "industry", "category", "carrier", "campaign", "refund_reason", "case_id"):
         if k in want:
             p[k] = find(k)
@@ -304,8 +311,8 @@ def rules_route(question, vocab):
     if "warehouse" in want:
         p["warehouse"] = re.search(r"warehouse (\w+)", q).group(1)
     if "channel" in want:
-        key = "channel_marketing" if name == "top_attributed_campaign" else "channel_acquisition"
-        m = re.search(r"(?:channel was|acquired through) ([A-Z][\w ]*?)(?:[?,.]| what)", q)
+        key = "channel_marketing" if name in MARKETING_CHANNEL_RECIPES else "channel_acquisition"
+        m = re.search(r"(?:channel was|acquired through|marketing channel) ([A-Z][\w ]*?)(?:[?,.]| what)", q)
         p["channel"] = m.group(1).strip() if m else find(key)
     route, err = validate({"recipe": name, "params": p}, vocab)
     return route or {"recipe": name, "params": p, "error": err}

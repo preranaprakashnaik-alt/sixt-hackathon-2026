@@ -122,6 +122,8 @@ class Data:
         pairs = set(zip(it.order_id, it.product_id))
         r = r[r.order_id.isin(valid) & np.array([k in pairs for k in zip(r.order_id, r.product_id)], dtype=bool)].copy()
         r["refund_eur"] = r.refund_amount_native * self.fx_rate(r.refund_ts, r.currency)
+        o = self.orders.set_index("order_id")
+        r["order_ts"], r["country"], r["region"] = r.order_id.map(o.order_ts), r.order_id.map(o.country), r.order_id.map(o.region)
         return r
 
     @cached_property
@@ -253,7 +255,7 @@ class Data:
         d = m.order_ts - m.touch_ts
         m = m[(d >= pd.Timedelta(0)) & (d <= pd.Timedelta(days=30))]
         m = m.sort_values(["touch_ts", "campaign", "touch_id"], ascending=[False, True, True]).drop_duplicates("order_id")
-        return o.merge(m[["order_id", "touch_id", "campaign", "marketing_channel"]], on="order_id", how="left", validate="1:1")
+        return o.merge(m[["order_id", "touch_id", "touch_ts", "campaign", "marketing_channel"]], on="order_id", how="left", validate="1:1")
 
     @cached_property
     def sessions(self):

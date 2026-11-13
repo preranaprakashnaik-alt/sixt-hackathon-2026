@@ -1,0 +1,111 @@
+{
+ "accounts": {
+  "acct_id": "account_id",
+  "acct_name": "account_name",
+  "billing_country": "account_country",
+  "sales_region": "account_region",
+  "acct_start_dt": "account_start_date",
+  "test_acct_flag": "is_test_account"
+ },
+ "customers": {
+  "acct_id": "account_id",
+  "cust_id": "customer_id",
+  "email_address": "email",
+  "test_customer_flag": "is_test_customer",
+  "signup_dt": "signup_date",
+  "trial_start_dt": "trial_start_date"
+ },
+ "fx_rates": {
+  "rate_month": "month",
+  "ccy": "currency",
+  "to_eur": "eur_rate"
+ },
+ "marketing_touches": {
+  "touch_key": "touch_id",
+  "cust_id": "customer_id",
+  "touch_dt": "touch_date",
+  "mkt_channel": "marketing_channel",
+  "cost_ccy": "currency",
+  "touch_cost_native": "cost_native"
+ },
+ "order_items": {
+  "order_key": "order_id",
+  "line_id": "order_item_id",
+  "sku": "product_id",
+  "qty": "quantity"
+ },
+ "orders": {
+  "order_key": "order_id",
+  "cust_id": "customer_id",
+  "order_dt": "order_date",
+  "lifecycle_status": "order_status",
+  "pay_status": "payment_status",
+  "order_ccy": "currency",
+  "promo_code": "coupon_code",
+  "order_discount_native": "order_level_discount_native",
+  "risk_hold_flag": "fraud_flag",
+  "duplicate_of": "duplicate_of_order_id",
+  "source": "source_channel"
+ },
+ "payments": {
+  "payment_key": "payment_id",
+  "order_key": "order_id",
+  "paid_dt": "payment_date",
+  "payment_state": "payment_status_detail",
+  "payment_ccy": "currency"
+ },
+ "product_category_history": {
+  "sku": "product_id",
+  "business_category": "category",
+  "category_valid_from": "valid_from",
+  "category_valid_to": "valid_to"
+ },
+ "products": {
+  "sku": "product_id",
+  "sku_name": "product_name",
+  "default_category": "initial_category",
+  "list_eur": "list_price_eur",
+  "std_cost": "standard_cost",
+  "cost_ccy": "cost_currency",
+  "launch_dt": "launch_date"
+ },
+ "refunds": {
+  "refund_key": "refund_id",
+  "order_key": "order_id",
+  "sku": "product_id",
+  "refund_dt": "refund_date",
+  "refund_ccy": "currency",
+  "refund_state": "refund_status"
+ },
+ "sales_targets": {
+  "target_month": "month",
+  "target_eur": "net_revenue_target_eur"
+ },
+ "shipments": {
+  "shipment_key": "shipment_id",
+  "order_key": "order_id",
+  "ship_dt": "shipped_at",
+  "promise_dt": "promised_delivery_date",
+  "delivery_dt": "delivered_at",
+  "fulfillment_region": "warehouse_region",
+  "ship_ccy": "currency"
+ },
+ "support_tickets": {
+  "case_id": "ticket_id",
+  "cust_id": "customer_id",
+  "related_order_key": "related_order_id",
+  "opened_ts": "opened_at",
+  "resolved_ts": "resolved_at",
+  "case_topic": "issue_type",
+  "case_priority": "priority",
+  "case_status": "ticket_status",
+  "case_channel": "support_channel"
+ },
+ "warehouse_inventory": {
+  "sku": "product_id"
+ },
+ "web_sessions": {
+  "cust_id": "customer_id",
+  "session_dt": "session_date"
+ }
+}

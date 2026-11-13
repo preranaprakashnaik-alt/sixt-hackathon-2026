@@ -186,6 +186,55 @@ def earliest_order_by_channel(D, channel):
     return NA if o.empty else o.order_ts.min().strftime("%Y-%m-%d")
 
 
+@recipe("Count of valid orders placed by customers in a country or region during a period.",
+        country="country or null", region="region or null", period="Q1-Q4 or YYYY-MM or null")
+def valid_order_count(D, country=None, region=None, period=None):
+    o = _geo(D.vorders, country, region)
+    months = period_months(period)
+    return int(len(o[o.month.isin(months)] if months else o))
+
+
+@recipe("Net revenue in a period for a country/region from valid orders whose resolved customer has at least two lifetime valid orders, at least one late shipment on a valid order, and at least one support ticket unresolved and SLA-breached at the reference time.",
+        country="country or null", region="region or null", period="Q1-Q4 or YYYY-MM")
+def revenue_repeat_late_breached(D, country=None, region=None, period=None):
+    o = D.vorders
+    n = o.groupby("identity").order_id.nunique()
+    ids = set(n[n >= 2].index) & set(D.shipments[D.shipments.late].identity) & set(D.tickets[D.tickets.unresolved & D.tickets.breach].identity)
+    sel = _geo(o[o.identity.isin(ids)], country, region)
+    return sel[sel.month.isin(period_months(period))].net_eur.sum()
+
+
+@recipe("Revenue concentration: percentage of lifetime net revenue contributed by the top ceil(10% of customer count) resolved customers with strictly positive revenue in a region (or 'All regions').",
+        region="region or 'All regions'")
+def top_decile_revenue_share(D, region=None):
+    rev = _geo(D.vorders, None, region).groupby("identity").net_eur.sum()
+    rev = rev[rev > 0].rename("v").reset_index().sort_values(["v", "identity"], ascending=[False, True])
+    if rev.empty:
+        return NA
+    k = int(np.ceil(0.1 * len(rev)))
+    return _pct(rev.v.head(k).sum(), rev.v.sum())
+
+
+@recipe("Change in total net revenue EUR (counterfactual minus actual) if each eligible approved refund used the ORDER-month FX rate instead of the refund-month FX rate, for a region (or 'All regions').",
+        region="region or 'All regions'")
+def refund_fx_counterfactual(D, region=None):
+    r = _geo(D.refunds, None, region)
+    cf = r.refund_amount_native * D.fx_rate(r.order_ts, r.currency)
+    return -(cf - r.refund_eur).sum()
+
+
+@recipe("Fully observed cohort retention: among resolved customers whose first valid order was in a month and at least N complete days before the reference time, percentage with another distinct valid order strictly after the first and no later than N days after it.",
+        month="YYYY-MM", days="integer")
+def cohort_retention_fully_observed_pct(D, month, days):
+    o = D.vorders[D.vorders.identity.isin(D.canonical.index)]
+    first = o.groupby("identity").order_ts.min()
+    win = pd.Timedelta(days=int(days))
+    cohort = first[(first.dt.strftime("%Y-%m") == month) & (REF - first >= win)]
+    f = o.identity.map(cohort)
+    later = set(o[f.notna() & (o.order_ts > f) & (o.order_ts - f <= win)].identity)
+    return _pct(len(later), len(cohort))
+
+
 # ================= margin / refunds =================
 @recipe("Margin rate percentage (total margin / total net revenue) for valid order items in a category, optional period.",
         category="product category", period="Q1-Q4, YYYY-MM or null")
@@ -214,6 +263,12 @@ def top_refund_rate_category(D, country=None, region=None):
     g = _items(D, country, region).groupby("category")[["refund_eur", "gross_eur"]].sum()
     g = g[g.gross_eur != 0]
     return _top(g.refund_eur / g.gross_eur)
+
+
+@recipe("Latest approved (eligible) refund date for valid order items in an order-time product category.", category="product category")
+def latest_refund_date(D, category):
+    r = D.refunds_cat[D.refunds_cat.category == category]
+    return NA if r.empty else r.refund_ts.max().strftime("%Y-%m-%d")
 
 
 @recipe("Pearson correlation across product categories between item (line) discount rate and approved-refund rate.")
@@ -309,6 +364,23 @@ def top_category_before_first_ticket(D, country, mode="identity"):
 def top_attributed_campaign(D, channel):
     a = D.attributed[D.attributed.marketing_channel == channel]
     return _top(a.groupby("campaign").net_eur.sum())
+
+
+@recipe("Average number of days between touch and order for attributed valid orders of a campaign (30-day last-touch attribution).",
+        campaign="campaign")
+def avg_days_touch_to_order(D, campaign):
+    a = D.attributed[D.attributed.campaign == campaign]
+    return NA if a.empty else float(((a.order_ts - a.touch_ts) / pd.Timedelta(days=1)).mean())
+
+
+@recipe("Marketing channel return percent: 100 * (attributed order margin EUR - shipping cost EUR on those orders - all eligible touch cost EUR of the channel) / all eligible touch cost EUR of the channel.",
+        channel="marketing channel")
+def channel_marketing_roi_pct(D, channel):
+    orders = set(D.attributed[D.attributed.marketing_channel == channel].order_id)
+    margin = D.items[D.items.order_id.isin(orders)].margin_eur.sum()
+    ship = D.shipments[D.shipments.order_id.isin(orders)].ship_cost_eur.sum()
+    spend = D.touches[D.touches.marketing_channel == channel].cost_eur.sum()
+    return _pct(margin - ship - spend, spend)
 
 
 # ================= support / shipments =================

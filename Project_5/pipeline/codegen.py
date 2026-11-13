@@ -41,7 +41,7 @@ TABLE_DOCS = {
                    "region, account_id, segment, industry.",
     "D.touches": "Eligible marketing touches: touch_id, customer_id, identity, touch_ts, marketing_channel, campaign, cost_eur.",
     "D.attributed": "One row per valid order with its 30-day last-touch attribution: order_id, identity, order_ts, net_eur, "
-                    "touch_id, campaign, marketing_channel (NaN when unattributed).",
+                    "touch_id, touch_ts, campaign, marketing_channel (NaN when unattributed).",
     "D.sessions": "Eligible web sessions: session_id, customer_id, identity, session_ts, traffic_source, page_views, minutes_on_site.",
     "D.po_lines": "Eligible purchase order lines (eligible supplier, open/closed, ordered by reference): po_line_id, supplier_id, "
                   "supplier_name, country (supplier country), product_id, family, warehouse_region, ordered_ts, promised_ts, "
@@ -57,7 +57,9 @@ TABLE_DOCS = {
     "D.movements": "Posted inventory movements after the stocktake and through reference: movement_id, product_id, "
                    "warehouse_region, event_ts, movement_type (receipt, return_restock, sale_issue, adjustment), units_delta.",
     "D.refunds_cat": "Eligible approved refunds on valid order/product pairs: refund_id, order_id, product_id, refund_ts, "
-                     "refund_reason, refund_eur, category (order-time category of the refunded product).",
+                     "refund_reason, currency, refund_amount_native, refund_eur (refund-month FX), order_ts, country, region (of the "
+                     "order's raw customer), category (order-time category of the refunded product). Helper: "
+                     "D.fx_rate(timestamp_series, currency_series) returns the monthly EUR rate for each row.",
     "D.inspections": "Eligible completed return inspections joined to their eligible refund: inspection_id, refund_id, "
                      "warehouse_region, insp_ts, units_received, restockable_units, recovery_eur, disposition, refund_reason, "
                      "category (order-time category), refund_eur.",

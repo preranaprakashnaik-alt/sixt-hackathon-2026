@@ -1,0 +1,3880 @@
+[
+ {
+  "question_id": "F001",
+  "route": {
+   "params": {
+    "period": "Q3",
+    "region": "Southern Europe"
+   },
+   "recipe": "top3_categories"
+  },
+  "rules_route": {
+   "recipe": "top3_categories",
+   "params": {
+    "region": "Southern Europe",
+    "period": "Q3"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "Laptop;Phone;Networking",
+  "answer": "Laptop;Phone;Networking"
+ },
+ {
+  "question_id": "F002",
+  "route": {
+   "params": {},
+   "recipe": "top_manager_at_risk"
+  },
+  "rules_route": {
+   "recipe": "top_manager_at_risk",
+   "params": {}
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "Sofia",
+  "answer": "Sofia"
+ },
+ {
+  "question_id": "F003",
+  "route": {
+   "params": {
+    "campaign": "SecurityPush",
+    "issue_type": "returns"
+   },
+   "recipe": "revenue_touch_and_ticket"
+  },
+  "rules_route": {
+   "recipe": "revenue_touch_and_ticket",
+   "params": {
+    "campaign": "SecurityPush",
+    "issue_type": "returns"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "523200.86",
+  "answer": "523200.86"
+ },
+ {
+  "question_id": "F004",
+  "route": {
+   "params": {
+    "country": "France",
+    "period": "Q3"
+   },
+   "recipe": "net_revenue"
+  },
+  "rules_route": {
+   "recipe": "net_revenue",
+   "params": {
+    "country": "France",
+    "period": "Q3"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "372881.74",
+  "answer": "372881.74"
+ },
+ {
+  "question_id": "F005",
+  "route": {
+   "params": {
+    "segment": "Public Sector"
+   },
+   "recipe": "top_issue_high_value_accounts"
+  },
+  "rules_route": {
+   "recipe": "top_issue_high_value_accounts",
+   "params": {
+    "segment": "Public Sector"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "delivery",
+  "answer": "delivery"
+ },
+ {
+  "question_id": "F006",
+  "route": {
+   "params": {
+    "country": "Greece"
+   },
+   "recipe": "top_category_before_first_ticket"
+  },
+  "rules_route": {
+   "recipe": "top_category_before_first_ticket",
+   "params": {
+    "country": "Greece"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "Laptop",
+  "answer": "Laptop"
+ },
+ {
+  "question_id": "F007",
+  "route": {
+   "params": {
+    "days": 30,
+    "month": "2024-03"
+   },
+   "recipe": "cohort_retention_pct"
+  },
+  "rules_route": {
+   "recipe": "cohort_retention_pct",
+   "params": {
+    "month": "2024-03",
+    "days": 30
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "15.23",
+  "answer": "15.23"
+ },
+ {
+  "question_id": "F008",
+  "route": {
+   "params": {
+    "campaign": "TrialNudge",
+    "issue_type": "delivery"
+   },
+   "recipe": "revenue_touch_and_ticket"
+  },
+  "rules_route": {
+   "recipe": "revenue_touch_and_ticket",
+   "params": {
+    "campaign": "TrialNudge",
+    "issue_type": "delivery"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "1163611.01",
+  "answer": "1163611.01"
+ },
+ {
+  "question_id": "F009",
+  "route": {
+   "params": {
+    "country": "Switzerland",
+    "period": "2024-03"
+   },
+   "recipe": "revenue_meets_target"
+  },
+  "rules_route": {
+   "recipe": "revenue_meets_target",
+   "params": {
+    "country": "Switzerland",
+    "period": "2024-03"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "true",
+  "answer": "true"
+ },
+ {
+  "question_id": "F010",
+  "route": {
+   "params": {
+    "country": "Switzerland"
+   },
+   "recipe": "top_refund_rate_category"
+  },
+  "rules_route": {
+   "recipe": "top_refund_rate_category",
+   "params": {
+    "country": "Switzerland"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "Accessory",
+  "answer": "Accessory"
+ },
+ {
+  "question_id": "F011",
+  "route": {
+   "params": {
+    "period": "Q2",
+    "region": "Western Europe"
+   },
+   "recipe": "revenue_vs_target_pct"
+  },
+  "rules_route": {
+   "recipe": "revenue_vs_target_pct",
+   "params": {
+    "region": "Western Europe",
+    "period": "Q2"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "85.62",
+  "answer": "85.62"
+ },
+ {
+  "question_id": "F012",
+  "route": {
+   "params": {
+    "month": "2024-10"
+   },
+   "recipe": "region_highest_zscore"
+  },
+  "rules_route": {
+   "recipe": "region_highest_zscore",
+   "params": {
+    "month": "2024-10"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "Southern Europe",
+  "answer": "Southern Europe"
+ },
+ {
+  "question_id": "F013",
+  "route": {
+   "params": {
+    "period_from": "Q3",
+    "period_to": "Q4",
+    "region": "Southern Europe",
+    "threshold_pct": 5.0
+   },
+   "recipe": "revenue_growth_at_least"
+  },
+  "rules_route": {
+   "recipe": "revenue_growth_at_least",
+   "params": {
+    "region": "Southern Europe",
+    "period_from": "Q3",
+    "period_to": "Q4",
+    "threshold_pct": 5.0
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "false",
+  "answer": "false"
+ },
+ {
+  "question_id": "F014",
+  "route": {
+   "params": {
+    "period": "Q3"
+   },
+   "recipe": "top_margin_category"
+  },
+  "rules_route": {
+   "recipe": "top_margin_category",
+   "params": {
+    "period": "Q3"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "Accessory",
+  "answer": "Accessory"
+ },
+ {
+  "question_id": "F015",
+  "route": {
+   "params": {
+    "campaign": "SecurityPush"
+   },
+   "recipe": "avg_days_touch_to_order"
+  },
+  "rules_route": {
+   "recipe": "avg_days_touch_to_order",
+   "params": {
+    "campaign": "SecurityPush"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "12.82",
+  "answer": "12.82"
+ },
+ {
+  "question_id": "F016",
+  "route": {
+   "params": {
+    "region": "Central Europe"
+   },
+   "recipe": "tickets_after_late_delivery_breach_pct"
+  },
+  "rules_route": {
+   "recipe": "tickets_after_late_delivery_breach_pct",
+   "params": {
+    "region": "Central Europe"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "50.00",
+  "answer": "50.00"
+ },
+ {
+  "question_id": "F017",
+  "route": {
+   "params": {
+    "industry": "Retail"
+   },
+   "recipe": "accounts_late_and_breach"
+  },
+  "rules_route": {
+   "recipe": "accounts_late_and_breach",
+   "params": {
+    "industry": "Retail"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "21",
+  "answer": "21"
+ },
+ {
+  "question_id": "F018",
+  "route": {
+   "params": {
+    "channel": "Partner"
+   },
+   "recipe": "top_attributed_campaign"
+  },
+  "rules_route": {
+   "recipe": "top_attributed_campaign",
+   "params": {
+    "channel": "Partner"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "HolidayBundle",
+  "answer": "HolidayBundle"
+ },
+ {
+  "question_id": "F019",
+  "route": {
+   "params": {
+    "segment": "SMB"
+   },
+   "recipe": "top_issue_high_value_accounts"
+  },
+  "rules_route": {
+   "recipe": "top_issue_high_value_accounts",
+   "params": {
+    "segment": "SMB"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "technical",
+  "answer": "technical"
+ },
+ {
+  "question_id": "F020",
+  "route": {
+   "params": {
+    "channel": "Referral"
+   },
+   "recipe": "earliest_order_by_channel"
+  },
+  "rules_route": {
+   "recipe": "earliest_order_by_channel",
+   "params": {
+    "channel": "Referral"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "2024-01-01",
+  "answer": "2024-01-01"
+ },
+ {
+  "question_id": "F021",
+  "route": {
+   "params": {
+    "country": "Portugal"
+   },
+   "recipe": "top_category_before_first_ticket"
+  },
+  "rules_route": {
+   "recipe": "top_category_before_first_ticket",
+   "params": {
+    "country": "Portugal"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "Laptop",
+  "answer": "Laptop"
+ },
+ {
+  "question_id": "F022",
+  "route": {
+   "params": {
+    "carrier": "FedEx"
+   },
+   "recipe": "carrier_weighted_delay"
+  },
+  "rules_route": {
+   "recipe": "carrier_weighted_delay",
+   "params": {
+    "carrier": "FedEx"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "34.61",
+  "answer": "34.61"
+ },
+ {
+  "question_id": "F023",
+  "route": {
+   "params": {
+    "month": "2024-10",
+    "region": "Western Europe"
+   },
+   "recipe": "revenue_zscore"
+  },
+  "rules_route": {
+   "recipe": "revenue_zscore",
+   "params": {
+    "region": "Western Europe",
+    "month": "2024-10"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "-1.26",
+  "answer": "-1.26"
+ },
+ {
+  "question_id": "F024",
+  "route": {
+   "params": {
+    "industry": "Health"
+   },
+   "recipe": "accounts_late_and_breach"
+  },
+  "rules_route": {
+   "recipe": "accounts_late_and_breach",
+   "params": {
+    "industry": "Health"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "28",
+  "answer": "28"
+ },
+ {
+  "question_id": "F025",
+  "route": {
+   "params": {
+    "country": "Austria"
+   },
+   "recipe": "top_refund_rate_category"
+  },
+  "rules_route": {
+   "recipe": "top_refund_rate_category",
+   "params": {
+    "country": "Austria"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "Appliance",
+  "answer": "Appliance"
+ },
+ {
+  "question_id": "F026",
+  "route": {
+   "params": {
+    "period": "Q1"
+   },
+   "recipe": "top_margin_category"
+  },
+  "rules_route": {
+   "recipe": "top_margin_category",
+   "params": {
+    "period": "Q1"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "Accessory",
+  "answer": "Accessory"
+ },
+ {
+  "question_id": "F027",
+  "route": {
+   "params": {
+    "country": "Spain"
+   },
+   "recipe": "top_category_before_first_ticket"
+  },
+  "rules_route": {
+   "recipe": "top_category_before_first_ticket",
+   "params": {
+    "country": "Spain"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "Laptop",
+  "answer": "Laptop"
+ },
+ {
+  "question_id": "F028",
+  "route": {
+   "params": {
+    "campaign": "PartnerBoost",
+    "issue_type": "account"
+   },
+   "recipe": "revenue_touch_and_ticket"
+  },
+  "rules_route": {
+   "recipe": "revenue_touch_and_ticket",
+   "params": {
+    "campaign": "PartnerBoost",
+    "issue_type": "account"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "347392.38",
+  "answer": "347392.38"
+ },
+ {
+  "question_id": "F029",
+  "route": {
+   "params": {
+    "country": "Austria"
+   },
+   "recipe": "at_risk_customers"
+  },
+  "rules_route": {
+   "recipe": "at_risk_customers",
+   "params": {
+    "country": "Austria"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "15",
+  "answer": "15"
+ },
+ {
+  "question_id": "F030",
+  "route": {
+   "params": {
+    "priority": "high"
+   },
+   "recipe": "sla_breach_pct"
+  },
+  "rules_route": {
+   "recipe": "sla_breach_pct",
+   "params": {
+    "priority": "high"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "45.02",
+  "answer": "45.02"
+ },
+ {
+  "question_id": "F031",
+  "route": {
+   "params": {
+    "days": 90,
+    "month": "2024-01"
+   },
+   "recipe": "cohort_retention_pct"
+  },
+  "rules_route": {
+   "recipe": "cohort_retention_pct",
+   "params": {
+    "month": "2024-01",
+    "days": 90
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "45.98",
+  "answer": "45.98"
+ },
+ {
+  "question_id": "F032",
+  "route": {
+   "params": {
+    "month": "2024-11"
+   },
+   "recipe": "region_highest_zscore"
+  },
+  "rules_route": {
+   "recipe": "region_highest_zscore",
+   "params": {
+    "month": "2024-11"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "Central Europe",
+  "answer": "Central Europe"
+ },
+ {
+  "question_id": "F033",
+  "route": {
+   "params": {
+    "period": "2024-11",
+    "region": "Central Europe"
+   },
+   "recipe": "top_product_name"
+  },
+  "rules_route": {
+   "recipe": "top_product_name",
+   "params": {
+    "region": "Central Europe",
+    "period": "2024-11"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "Orion Workstation",
+  "answer": "Orion Workstation"
+ },
+ {
+  "question_id": "F034",
+  "route": {
+   "params": {
+    "period": "Q4",
+    "region": "Western Europe"
+   },
+   "recipe": "revenue_vs_target_pct"
+  },
+  "rules_route": {
+   "recipe": "revenue_vs_target_pct",
+   "params": {
+    "region": "Western Europe",
+    "period": "Q4"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "64.55",
+  "answer": "64.55"
+ },
+ {
+  "question_id": "F035",
+  "route": {
+   "params": {
+    "period": "Q4"
+   },
+   "recipe": "top_margin_category"
+  },
+  "rules_route": {
+   "recipe": "top_margin_category",
+   "params": {
+    "period": "Q4"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "Accessory",
+  "answer": "Accessory"
+ },
+ {
+  "question_id": "F036",
+  "route": {
+   "params": {
+    "region": "Central Europe"
+   },
+   "recipe": "top_delay_carrier"
+  },
+  "rules_route": {
+   "recipe": "top_delay_carrier",
+   "params": {
+    "region": "Central Europe"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "PostNL",
+  "answer": "PostNL"
+ },
+ {
+  "question_id": "F037",
+  "route": {
+   "params": {
+    "carrier": "DHL"
+   },
+   "recipe": "carrier_weighted_delay"
+  },
+  "rules_route": {
+   "recipe": "carrier_weighted_delay",
+   "params": {
+    "carrier": "DHL"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "35.43",
+  "answer": "35.43"
+ },
+ {
+  "question_id": "F038",
+  "route": {
+   "params": {
+    "country": "Austria",
+    "period_from": "Q3",
+    "period_to": "Q4"
+   },
+   "recipe": "revenue_growth_pct"
+  },
+  "rules_route": {
+   "recipe": "revenue_growth_pct",
+   "params": {
+    "country": "Austria",
+    "period_from": "Q3",
+    "period_to": "Q4"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "-21.97",
+  "answer": "-21.97"
+ },
+ {
+  "question_id": "F039",
+  "route": {
+   "params": {
+    "category": "Tablet"
+   },
+   "recipe": "margin_rate_pct"
+  },
+  "rules_route": {
+   "recipe": "margin_rate_pct",
+   "params": {
+    "category": "Tablet"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "46.95",
+  "answer": "46.95"
+ },
+ {
+  "question_id": "F040",
+  "route": {
+   "params": {
+    "campaign": "SpringLaunch"
+   },
+   "recipe": "avg_days_touch_to_order"
+  },
+  "rules_route": {
+   "recipe": "avg_days_touch_to_order",
+   "params": {
+    "campaign": "SpringLaunch"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "16.02",
+  "answer": "16.02"
+ },
+ {
+  "question_id": "F041",
+  "route": {
+   "params": {
+    "days": 90,
+    "month": "2024-03"
+   },
+   "recipe": "cohort_retention_pct"
+  },
+  "rules_route": {
+   "recipe": "cohort_retention_pct",
+   "params": {
+    "month": "2024-03",
+    "days": 90
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "47.02",
+  "answer": "47.02"
+ },
+ {
+  "question_id": "F042",
+  "route": {
+   "params": {
+    "month": "2024-12"
+   },
+   "recipe": "region_highest_zscore"
+  },
+  "rules_route": {
+   "recipe": "region_highest_zscore",
+   "params": {
+    "month": "2024-12"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "Western Europe",
+  "answer": "Western Europe"
+ },
+ {
+  "question_id": "F043",
+  "route": {
+   "params": {
+    "country": "Netherlands"
+   },
+   "recipe": "at_risk_customers"
+  },
+  "rules_route": {
+   "recipe": "at_risk_customers",
+   "params": {
+    "country": "Netherlands"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "16",
+  "answer": "16"
+ },
+ {
+  "question_id": "F044",
+  "route": {
+   "params": {
+    "country": "Poland",
+    "period": "Q2"
+   },
+   "recipe": "net_revenue"
+  },
+  "rules_route": {
+   "recipe": "net_revenue",
+   "params": {
+    "country": "Poland",
+    "period": "Q2"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "252262.69",
+  "answer": "252262.69"
+ },
+ {
+  "question_id": "F045",
+  "route": {
+   "params": {
+    "category": "Phone",
+    "segment": "Enterprise"
+   },
+   "recipe": "top_account_category_share"
+  },
+  "rules_route": {
+   "recipe": "top_account_category_share",
+   "params": {
+    "segment": "Enterprise",
+    "category": "Phone"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "17.91",
+  "answer": "17.91"
+ },
+ {
+  "question_id": "F046",
+  "route": {
+   "params": {
+    "category": "Service"
+   },
+   "recipe": "latest_refund_date"
+  },
+  "rules_route": {
+   "recipe": "latest_refund_date",
+   "params": {
+    "category": "Service"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "2024-12-24",
+  "answer": "2024-12-24"
+ },
+ {
+  "question_id": "F047",
+  "route": {
+   "params": {
+    "category": "Tablet"
+   },
+   "recipe": "latest_refund_date"
+  },
+  "rules_route": {
+   "recipe": "latest_refund_date",
+   "params": {
+    "category": "Tablet"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "2024-12-14",
+  "answer": "2024-12-14"
+ },
+ {
+  "question_id": "F048",
+  "route": {
+   "params": {
+    "source": "organic"
+   },
+   "recipe": "web_conversion_pct"
+  },
+  "rules_route": {
+   "recipe": "web_conversion_pct",
+   "params": {
+    "source": "organic"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "10.97",
+  "answer": "10.97"
+ },
+ {
+  "question_id": "F049",
+  "route": {
+   "params": {
+    "carrier": "GLS"
+   },
+   "recipe": "carrier_weighted_delay"
+  },
+  "rules_route": {
+   "recipe": "carrier_weighted_delay",
+   "params": {
+    "carrier": "GLS"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "24.21",
+  "answer": "24.21"
+ },
+ {
+  "question_id": "F050",
+  "route": {
+   "params": {
+    "segment": "Public Sector"
+   },
+   "recipe": "account_ltv_p90"
+  },
+  "rules_route": {
+   "recipe": "account_ltv_p90",
+   "params": {
+    "segment": "Public Sector"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "79005.70",
+  "answer": "79005.70"
+ },
+ {
+  "question_id": "F051",
+  "route": {
+   "params": {},
+   "recipe": "top_email_domain"
+  },
+  "rules_route": {
+   "recipe": "top_email_domain",
+   "params": {}
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "gmail.com",
+  "answer": "gmail.com"
+ },
+ {
+  "question_id": "F052",
+  "route": {
+   "params": {
+    "segment": "Public Sector"
+   },
+   "recipe": "median_order_revenue_segment"
+  },
+  "rules_route": {
+   "recipe": "median_order_revenue_segment",
+   "params": {
+    "segment": "Public Sector"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "2959.27",
+  "answer": "2959.27"
+ },
+ {
+  "question_id": "F053",
+  "route": {
+   "params": {
+    "region": "Southern Europe"
+   },
+   "recipe": "top_delay_carrier"
+  },
+  "rules_route": {
+   "recipe": "top_delay_carrier",
+   "params": {
+    "region": "Southern Europe"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "DPD",
+  "answer": "DPD"
+ },
+ {
+  "question_id": "F054",
+  "route": {
+   "params": {
+    "segment": "Enterprise"
+   },
+   "recipe": "median_order_revenue_segment"
+  },
+  "rules_route": {
+   "recipe": "median_order_revenue_segment",
+   "params": {
+    "segment": "Enterprise"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "3285.81",
+  "answer": "3285.81"
+ },
+ {
+  "question_id": "F055",
+  "route": {
+   "params": {
+    "category": "Phone",
+    "period": "Q1"
+   },
+   "recipe": "refund_rate_pct"
+  },
+  "rules_route": {
+   "recipe": "refund_rate_pct",
+   "params": {
+    "period": "Q1",
+    "category": "Phone"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "1.82",
+  "answer": "1.82"
+ },
+ {
+  "question_id": "F056",
+  "route": {
+   "params": {
+    "channel": "Partner"
+   },
+   "recipe": "earliest_order_by_channel"
+  },
+  "rules_route": {
+   "recipe": "earliest_order_by_channel",
+   "params": {
+    "channel": "Partner"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "2024-01-01",
+  "answer": "2024-01-01"
+ },
+ {
+  "question_id": "F057",
+  "route": {
+   "params": {
+    "country": "Germany",
+    "period": "2024-11"
+   },
+   "recipe": "valid_order_count"
+  },
+  "rules_route": {
+   "recipe": "valid_order_count",
+   "params": {
+    "country": "Germany",
+    "period": "2024-11"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "18",
+  "answer": "18"
+ },
+ {
+  "question_id": "F058",
+  "route": {
+   "params": {
+    "period": "2024-03",
+    "region": "Central Europe"
+   },
+   "recipe": "net_revenue"
+  },
+  "rules_route": {
+   "recipe": "net_revenue",
+   "params": {
+    "region": "Central Europe",
+    "period": "2024-03"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "184791.97",
+  "answer": "184791.97"
+ },
+ {
+  "question_id": "F059",
+  "route": {
+   "params": {
+    "country": "Spain"
+   },
+   "recipe": "at_risk_customers"
+  },
+  "rules_route": {
+   "recipe": "at_risk_customers",
+   "params": {
+    "country": "Spain"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "14",
+  "answer": "14"
+ },
+ {
+  "question_id": "F060",
+  "route": {
+   "params": {
+    "country": "Switzerland"
+   },
+   "recipe": "unique_customers"
+  },
+  "rules_route": {
+   "recipe": "unique_customers",
+   "params": {
+    "country": "Switzerland"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "141",
+  "answer": "141"
+ },
+ {
+  "question_id": "F061",
+  "route": {
+   "params": {
+    "period": "2024-09",
+    "region": "Central Europe"
+   },
+   "recipe": "top_product_name"
+  },
+  "rules_route": {
+   "recipe": "top_product_name",
+   "params": {
+    "region": "Central Europe",
+    "period": "2024-09"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "Vector Ultralite",
+  "answer": "Vector Ultralite"
+ },
+ {
+  "question_id": "F062",
+  "route": {
+   "params": {
+    "category": "Accessory"
+   },
+   "recipe": "latest_refund_date"
+  },
+  "rules_route": {
+   "recipe": "latest_refund_date",
+   "params": {
+    "category": "Accessory"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "2024-12-21",
+  "answer": "2024-12-21"
+ },
+ {
+  "question_id": "F063",
+  "route": {
+   "params": {
+    "category": "Service"
+   },
+   "recipe": "margin_rate_pct"
+  },
+  "rules_route": {
+   "recipe": "margin_rate_pct",
+   "params": {
+    "category": "Service"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "33.03",
+  "answer": "33.03"
+ },
+ {
+  "question_id": "F064",
+  "route": {
+   "params": {
+    "country": "Austria"
+   },
+   "recipe": "top_category_before_first_ticket"
+  },
+  "rules_route": {
+   "recipe": "top_category_before_first_ticket",
+   "params": {
+    "country": "Austria"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "Phone",
+  "answer": "Phone"
+ },
+ {
+  "question_id": "F065",
+  "route": {
+   "params": {
+    "category": "Appliance",
+    "period": "Q2"
+   },
+   "recipe": "refund_rate_pct"
+  },
+  "rules_route": {
+   "recipe": "refund_rate_pct",
+   "params": {
+    "period": "Q2",
+    "category": "Appliance"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "2.62",
+  "answer": "2.62"
+ },
+ {
+  "question_id": "F066",
+  "route": {
+   "params": {
+    "country": "Switzerland",
+    "period_from": "Q3",
+    "period_to": "Q4"
+   },
+   "recipe": "revenue_growth_pct"
+  },
+  "rules_route": {
+   "recipe": "revenue_growth_pct",
+   "params": {
+    "country": "Switzerland",
+    "period_from": "Q3",
+    "period_to": "Q4"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "2.60",
+  "answer": "2.60"
+ },
+ {
+  "question_id": "F067",
+  "route": {
+   "params": {
+    "category": "Software",
+    "period": "Q1"
+   },
+   "recipe": "refund_rate_pct"
+  },
+  "rules_route": {
+   "recipe": "refund_rate_pct",
+   "params": {
+    "period": "Q1",
+    "category": "Software"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "2.89",
+  "answer": "2.89"
+ },
+ {
+  "question_id": "F068",
+  "route": {
+   "params": {
+    "campaign": "Winback"
+   },
+   "recipe": "avg_days_touch_to_order"
+  },
+  "rules_route": {
+   "recipe": "avg_days_touch_to_order",
+   "params": {
+    "campaign": "Winback"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "15.03",
+  "answer": "15.03"
+ },
+ {
+  "question_id": "F069",
+  "route": {
+   "params": {
+    "industry": "Education"
+   },
+   "recipe": "accounts_late_and_breach"
+  },
+  "rules_route": {
+   "recipe": "accounts_late_and_breach",
+   "params": {
+    "industry": "Education"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "36",
+  "answer": "36"
+ },
+ {
+  "question_id": "F070",
+  "route": {
+   "params": {
+    "country": "Germany",
+    "period_from": "Q3",
+    "period_to": "Q4"
+   },
+   "recipe": "revenue_growth_pct"
+  },
+  "rules_route": {
+   "recipe": "revenue_growth_pct",
+   "params": {
+    "country": "Germany",
+    "period_from": "Q3",
+    "period_to": "Q4"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "-11.03",
+  "answer": "-11.03"
+ },
+ {
+  "question_id": "F071",
+  "route": {
+   "params": {
+    "period": "Q3",
+    "region": "Western Europe"
+   },
+   "recipe": "top3_categories"
+  },
+  "rules_route": {
+   "recipe": "top3_categories",
+   "params": {
+    "region": "Western Europe",
+    "period": "Q3"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "Laptop;Phone;Networking",
+  "answer": "Laptop;Phone;Networking"
+ },
+ {
+  "question_id": "F072",
+  "route": {
+   "params": {
+    "period": "2024-02",
+    "region": "Western Europe"
+   },
+   "recipe": "net_revenue"
+  },
+  "rules_route": {
+   "recipe": "net_revenue",
+   "params": {
+    "region": "Western Europe",
+    "period": "2024-02"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "360850.08",
+  "answer": "360850.08"
+ },
+ {
+  "question_id": "F073",
+  "route": {
+   "params": {
+    "period": "2024-05",
+    "region": "Central Europe"
+   },
+   "recipe": "top_product_name"
+  },
+  "rules_route": {
+   "recipe": "top_product_name",
+   "params": {
+    "region": "Central Europe",
+    "period": "2024-05"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "Orion Phone Core",
+  "answer": "Orion Phone Core"
+ },
+ {
+  "question_id": "F074",
+  "route": {
+   "params": {
+    "channel": "Social"
+   },
+   "recipe": "top_attributed_campaign"
+  },
+  "rules_route": {
+   "recipe": "top_attributed_campaign",
+   "params": {
+    "channel": "Social"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "RetentionWave",
+  "answer": "RetentionWave"
+ },
+ {
+  "question_id": "F075",
+  "route": {
+   "params": {
+    "region": "Western Europe"
+   },
+   "recipe": "active_customers"
+  },
+  "rules_route": {
+   "recipe": "active_customers",
+   "params": {
+    "region": "Western Europe"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "173",
+  "answer": "173"
+ },
+ {
+  "question_id": "F076",
+  "route": {
+   "params": {
+    "category": "Tablet",
+    "period": "Q4"
+   },
+   "recipe": "refund_rate_pct"
+  },
+  "rules_route": {
+   "recipe": "refund_rate_pct",
+   "params": {
+    "period": "Q4",
+    "category": "Tablet"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "1.42",
+  "answer": "1.42"
+ },
+ {
+  "question_id": "F077",
+  "route": {
+   "params": {
+    "country": "Germany"
+   },
+   "recipe": "top_category_before_first_ticket"
+  },
+  "rules_route": {
+   "recipe": "top_category_before_first_ticket",
+   "params": {
+    "country": "Germany"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "Laptop",
+  "answer": "Laptop"
+ },
+ {
+  "question_id": "F078",
+  "route": {
+   "params": {
+    "channel": "Referral"
+   },
+   "recipe": "top_attributed_campaign"
+  },
+  "rules_route": {
+   "recipe": "top_attributed_campaign",
+   "params": {
+    "channel": "Referral"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "PartnerBoost",
+  "answer": "PartnerBoost"
+ },
+ {
+  "question_id": "F079",
+  "route": {
+   "params": {
+    "region": "Central Europe"
+   },
+   "recipe": "active_customers"
+  },
+  "rules_route": {
+   "recipe": "active_customers",
+   "params": {
+    "region": "Central Europe"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "96",
+  "answer": "96"
+ },
+ {
+  "question_id": "F080",
+  "route": {
+   "params": {
+    "period": "Q1",
+    "region": "Central Europe"
+   },
+   "recipe": "top3_categories"
+  },
+  "rules_route": {
+   "recipe": "top3_categories",
+   "params": {
+    "region": "Central Europe",
+    "period": "Q1"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "Laptop;Phone;Tablet",
+  "answer": "Laptop;Phone;Tablet"
+ },
+ {
+  "question_id": "F081",
+  "route": {
+   "params": {
+    "country": "Germany",
+    "period": "Q4"
+   },
+   "recipe": "revenue_repeat_late_breached"
+  },
+  "rules_route": {
+   "recipe": "revenue_repeat_late_breached",
+   "params": {
+    "country": "Germany",
+    "period": "Q4"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "58826.17",
+  "answer": "58826.17"
+ },
+ {
+  "question_id": "F082",
+  "route": {
+   "params": {
+    "country": "France",
+    "period": "Q4"
+   },
+   "recipe": "revenue_repeat_late_breached"
+  },
+  "rules_route": {
+   "recipe": "revenue_repeat_late_breached",
+   "params": {
+    "country": "France",
+    "period": "Q4"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "66772.38",
+  "answer": "66772.38"
+ },
+ {
+  "question_id": "F083",
+  "route": {
+   "params": {
+    "country": "Italy",
+    "period": "Q4"
+   },
+   "recipe": "revenue_repeat_late_breached"
+  },
+  "rules_route": {
+   "recipe": "revenue_repeat_late_breached",
+   "params": {
+    "country": "Italy",
+    "period": "Q4"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "64900.14",
+  "answer": "64900.14"
+ },
+ {
+  "question_id": "F084",
+  "route": {
+   "params": {
+    "country": "Spain",
+    "period": "Q4"
+   },
+   "recipe": "revenue_repeat_late_breached"
+  },
+  "rules_route": {
+   "recipe": "revenue_repeat_late_breached",
+   "params": {
+    "country": "Spain",
+    "period": "Q4"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "63701.99",
+  "answer": "63701.99"
+ },
+ {
+  "question_id": "F085",
+  "route": {
+   "params": {
+    "region": "Central Europe"
+   },
+   "recipe": "top_decile_revenue_share"
+  },
+  "rules_route": {
+   "recipe": "top_decile_revenue_share",
+   "params": {
+    "region": "Central Europe"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "27.57",
+  "answer": "27.57"
+ },
+ {
+  "question_id": "F086",
+  "route": {
+   "params": {
+    "region": "Western Europe"
+   },
+   "recipe": "top_decile_revenue_share"
+  },
+  "rules_route": {
+   "recipe": "top_decile_revenue_share",
+   "params": {
+    "region": "Western Europe"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "26.80",
+  "answer": "26.80"
+ },
+ {
+  "question_id": "F087",
+  "route": {
+   "params": {
+    "region": "Southern Europe"
+   },
+   "recipe": "top_decile_revenue_share"
+  },
+  "rules_route": {
+   "recipe": "top_decile_revenue_share",
+   "params": {
+    "region": "Southern Europe"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "26.80",
+  "answer": "26.80"
+ },
+ {
+  "question_id": "F088",
+  "route": {
+   "params": {
+    "region": "All regions"
+   },
+   "recipe": "top_decile_revenue_share"
+  },
+  "rules_route": {
+   "recipe": "top_decile_revenue_share",
+   "params": {
+    "region": "All regions"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "27.96",
+  "answer": "27.96"
+ },
+ {
+  "question_id": "F089",
+  "route": {
+   "params": {
+    "channel": "Email"
+   },
+   "recipe": "channel_marketing_roi_pct"
+  },
+  "rules_route": {
+   "recipe": "channel_marketing_roi_pct",
+   "params": {
+    "channel": "Email"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "316.35",
+  "answer": "316.35"
+ },
+ {
+  "question_id": "F090",
+  "route": {
+   "params": {
+    "channel": "Paid Search"
+   },
+   "recipe": "channel_marketing_roi_pct"
+  },
+  "rules_route": {
+   "recipe": "channel_marketing_roi_pct",
+   "params": {
+    "channel": "Paid Search"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "501.14",
+  "answer": "501.14"
+ },
+ {
+  "question_id": "F091",
+  "route": {
+   "params": {
+    "channel": "Social"
+   },
+   "recipe": "channel_marketing_roi_pct"
+  },
+  "rules_route": {
+   "recipe": "channel_marketing_roi_pct",
+   "params": {
+    "channel": "Social"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "301.33",
+  "answer": "301.33"
+ },
+ {
+  "question_id": "F092",
+  "route": {
+   "params": {
+    "channel": "Partner"
+   },
+   "recipe": "channel_marketing_roi_pct"
+  },
+  "rules_route": {
+   "recipe": "channel_marketing_roi_pct",
+   "params": {
+    "channel": "Partner"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "391.82",
+  "answer": "391.82"
+ },
+ {
+  "question_id": "F093",
+  "route": {
+   "params": {
+    "days": 60,
+    "month": "2024-07"
+   },
+   "recipe": "cohort_retention_fully_observed_pct"
+  },
+  "rules_route": {
+   "recipe": "cohort_retention_fully_observed_pct",
+   "params": {
+    "month": "2024-07",
+    "days": 60
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "35.14",
+  "answer": "35.14"
+ },
+ {
+  "question_id": "F094",
+  "route": {
+   "params": {
+    "days": 60,
+    "month": "2024-08"
+   },
+   "recipe": "cohort_retention_fully_observed_pct"
+  },
+  "rules_route": {
+   "recipe": "cohort_retention_fully_observed_pct",
+   "params": {
+    "month": "2024-08",
+    "days": 60
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "33.33",
+  "answer": "33.33"
+ },
+ {
+  "question_id": "F095",
+  "route": {
+   "params": {
+    "days": 60,
+    "month": "2024-09"
+   },
+   "recipe": "cohort_retention_fully_observed_pct"
+  },
+  "rules_route": {
+   "recipe": "cohort_retention_fully_observed_pct",
+   "params": {
+    "month": "2024-09",
+    "days": 60
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "34.48",
+  "answer": "34.48"
+ },
+ {
+  "question_id": "F096",
+  "route": {
+   "params": {
+    "days": 60,
+    "month": "2024-10"
+   },
+   "recipe": "cohort_retention_fully_observed_pct"
+  },
+  "rules_route": {
+   "recipe": "cohort_retention_fully_observed_pct",
+   "params": {
+    "month": "2024-10",
+    "days": 60
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "34.29",
+  "answer": "34.29"
+ },
+ {
+  "question_id": "F097",
+  "route": {
+   "params": {
+    "region": "Central Europe"
+   },
+   "recipe": "refund_fx_counterfactual"
+  },
+  "rules_route": {
+   "recipe": "refund_fx_counterfactual",
+   "params": {
+    "region": "Central Europe"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "496.76",
+  "answer": "496.76"
+ },
+ {
+  "question_id": "F098",
+  "route": {
+   "params": {
+    "region": "Western Europe"
+   },
+   "recipe": "refund_fx_counterfactual"
+  },
+  "rules_route": {
+   "recipe": "refund_fx_counterfactual",
+   "params": {
+    "region": "Western Europe"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "121.74",
+  "answer": "121.74"
+ },
+ {
+  "question_id": "F099",
+  "route": {
+   "params": {
+    "region": "Southern Europe"
+   },
+   "recipe": "refund_fx_counterfactual"
+  },
+  "rules_route": {
+   "recipe": "refund_fx_counterfactual",
+   "params": {
+    "region": "Southern Europe"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "181.89",
+  "answer": "181.89"
+ },
+ {
+  "question_id": "F100",
+  "route": {
+   "params": {
+    "region": "All regions"
+   },
+   "recipe": "refund_fx_counterfactual"
+  },
+  "rules_route": {
+   "recipe": "refund_fx_counterfactual",
+   "params": {
+    "region": "All regions"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "800.39",
+  "answer": "800.39"
+ },
+ {
+  "question_id": "F101",
+  "route": {
+   "params": {
+    "supplier_country": "Germany"
+   },
+   "recipe": "procurement_commitment"
+  },
+  "rules_route": {
+   "recipe": "procurement_commitment",
+   "params": {
+    "supplier_country": "Germany"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "2150603.55",
+  "answer": "2150603.55"
+ },
+ {
+  "question_id": "F102",
+  "route": {
+   "params": {
+    "supplier_country": "France"
+   },
+   "recipe": "procurement_commitment"
+  },
+  "rules_route": {
+   "recipe": "procurement_commitment",
+   "params": {
+    "supplier_country": "France"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "2491187.16",
+  "answer": "2491187.16"
+ },
+ {
+  "question_id": "F103",
+  "route": {
+   "params": {
+    "supplier_country": "Italy"
+   },
+   "recipe": "procurement_commitment"
+  },
+  "rules_route": {
+   "recipe": "procurement_commitment",
+   "params": {
+    "supplier_country": "Italy"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "2132269.65",
+  "answer": "2132269.65"
+ },
+ {
+  "question_id": "F104",
+  "route": {
+   "params": {
+    "supplier_country": "Spain"
+   },
+   "recipe": "procurement_commitment"
+  },
+  "rules_route": {
+   "recipe": "procurement_commitment",
+   "params": {
+    "supplier_country": "Spain"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "3200998.32",
+  "answer": "3200998.32"
+ },
+ {
+  "question_id": "F105",
+  "route": {
+   "params": {
+    "warehouse": "North"
+   },
+   "recipe": "procurement_open_units"
+  },
+  "rules_route": {
+   "recipe": "procurement_open_units",
+   "params": {
+    "warehouse": "North"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "1779",
+  "answer": "1779"
+ },
+ {
+  "question_id": "F106",
+  "route": {
+   "params": {
+    "warehouse": "South"
+   },
+   "recipe": "procurement_open_units"
+  },
+  "rules_route": {
+   "recipe": "procurement_open_units",
+   "params": {
+    "warehouse": "South"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "1832",
+  "answer": "1832"
+ },
+ {
+  "question_id": "F107",
+  "route": {
+   "params": {
+    "warehouse": "East"
+   },
+   "recipe": "procurement_open_units"
+  },
+  "rules_route": {
+   "recipe": "procurement_open_units",
+   "params": {
+    "warehouse": "East"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "1858",
+  "answer": "1858"
+ },
+ {
+  "question_id": "F108",
+  "route": {
+   "params": {
+    "warehouse": "West"
+   },
+   "recipe": "procurement_open_units"
+  },
+  "rules_route": {
+   "recipe": "procurement_open_units",
+   "params": {
+    "warehouse": "West"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "2269",
+  "answer": "2269"
+ },
+ {
+  "question_id": "F109",
+  "route": {
+   "params": {
+    "supplier_country": "Germany"
+   },
+   "recipe": "procurement_on_time_pct"
+  },
+  "rules_route": {
+   "recipe": "procurement_on_time_pct",
+   "params": {
+    "supplier_country": "Germany"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "46.77",
+  "answer": "46.77"
+ },
+ {
+  "question_id": "F110",
+  "route": {
+   "params": {
+    "supplier_country": "France"
+   },
+   "recipe": "procurement_on_time_pct"
+  },
+  "rules_route": {
+   "recipe": "procurement_on_time_pct",
+   "params": {
+    "supplier_country": "France"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "46.96",
+  "answer": "46.96"
+ },
+ {
+  "question_id": "F111",
+  "route": {
+   "params": {
+    "supplier_country": "Italy"
+   },
+   "recipe": "procurement_on_time_pct"
+  },
+  "rules_route": {
+   "recipe": "procurement_on_time_pct",
+   "params": {
+    "supplier_country": "Italy"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "46.60",
+  "answer": "46.60"
+ },
+ {
+  "question_id": "F112",
+  "route": {
+   "params": {
+    "supplier_country": "Spain"
+   },
+   "recipe": "procurement_on_time_pct"
+  },
+  "rules_route": {
+   "recipe": "procurement_on_time_pct",
+   "params": {
+    "supplier_country": "Spain"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "44.63",
+  "answer": "44.63"
+ },
+ {
+  "question_id": "F113",
+  "route": {
+   "params": {
+    "supplier_country": "Germany"
+   },
+   "recipe": "procurement_rejection_pct"
+  },
+  "rules_route": {
+   "recipe": "procurement_rejection_pct",
+   "params": {
+    "supplier_country": "Germany"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "8.45",
+  "answer": "8.45"
+ },
+ {
+  "question_id": "F114",
+  "route": {
+   "params": {
+    "supplier_country": "France"
+   },
+   "recipe": "procurement_rejection_pct"
+  },
+  "rules_route": {
+   "recipe": "procurement_rejection_pct",
+   "params": {
+    "supplier_country": "France"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "8.92",
+  "answer": "8.92"
+ },
+ {
+  "question_id": "F115",
+  "route": {
+   "params": {
+    "supplier_country": "Italy"
+   },
+   "recipe": "procurement_rejection_pct"
+  },
+  "rules_route": {
+   "recipe": "procurement_rejection_pct",
+   "params": {
+    "supplier_country": "Italy"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "8.01",
+  "answer": "8.01"
+ },
+ {
+  "question_id": "F116",
+  "route": {
+   "params": {
+    "supplier_country": "Spain"
+   },
+   "recipe": "procurement_rejection_pct"
+  },
+  "rules_route": {
+   "recipe": "procurement_rejection_pct",
+   "params": {
+    "supplier_country": "Spain"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "8.52",
+  "answer": "8.52"
+ },
+ {
+  "question_id": "F117",
+  "route": {
+   "params": {
+    "family": "Hardware"
+   },
+   "recipe": "procurement_price_variance"
+  },
+  "rules_route": {
+   "recipe": "procurement_price_variance",
+   "params": {
+    "family": "Hardware"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "543351.76",
+  "answer": "543351.76"
+ },
+ {
+  "question_id": "F118",
+  "route": {
+   "params": {
+    "family": "Cloud"
+   },
+   "recipe": "procurement_price_variance"
+  },
+  "rules_route": {
+   "recipe": "procurement_price_variance",
+   "params": {
+    "family": "Cloud"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "25801.91",
+  "answer": "25801.91"
+ },
+ {
+  "question_id": "F119",
+  "route": {
+   "params": {
+    "family": "Professional Services"
+   },
+   "recipe": "procurement_price_variance"
+  },
+  "rules_route": {
+   "recipe": "procurement_price_variance",
+   "params": {
+    "family": "Professional Services"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "69482.55",
+  "answer": "69482.55"
+ },
+ {
+  "question_id": "F120",
+  "route": {
+   "params": {
+    "family": "All families"
+   },
+   "recipe": "procurement_price_variance"
+  },
+  "rules_route": {
+   "recipe": "procurement_price_variance",
+   "params": {
+    "family": "All families"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "638636.22",
+  "answer": "638636.22"
+ },
+ {
+  "question_id": "F121",
+  "route": {
+   "params": {
+    "warehouse": "North"
+   },
+   "recipe": "procurement_received_cost"
+  },
+  "rules_route": {
+   "recipe": "procurement_received_cost",
+   "params": {
+    "warehouse": "North"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "1428650.17",
+  "answer": "1428650.17"
+ },
+ {
+  "question_id": "F122",
+  "route": {
+   "params": {
+    "warehouse": "South"
+   },
+   "recipe": "procurement_received_cost"
+  },
+  "rules_route": {
+   "recipe": "procurement_received_cost",
+   "params": {
+    "warehouse": "South"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "1329341.78",
+  "answer": "1329341.78"
+ },
+ {
+  "question_id": "F123",
+  "route": {
+   "params": {
+    "warehouse": "East"
+   },
+   "recipe": "procurement_received_cost"
+  },
+  "rules_route": {
+   "recipe": "procurement_received_cost",
+   "params": {
+    "warehouse": "East"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "1452654.45",
+  "answer": "1452654.45"
+ },
+ {
+  "question_id": "F124",
+  "route": {
+   "params": {
+    "warehouse": "West"
+   },
+   "recipe": "procurement_received_cost"
+  },
+  "rules_route": {
+   "recipe": "procurement_received_cost",
+   "params": {
+    "warehouse": "West"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "1487631.05",
+  "answer": "1487631.05"
+ },
+ {
+  "question_id": "F125",
+  "route": {
+   "params": {
+    "supplier_country": "Germany"
+   },
+   "recipe": "procurement_worst_supplier"
+  },
+  "rules_route": {
+   "recipe": "procurement_worst_supplier",
+   "params": {
+    "supplier_country": "Germany"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "Germany Supply 4",
+  "answer": "Germany Supply 4"
+ },
+ {
+  "question_id": "F126",
+  "route": {
+   "params": {
+    "supplier_country": "France"
+   },
+   "recipe": "procurement_worst_supplier"
+  },
+  "rules_route": {
+   "recipe": "procurement_worst_supplier",
+   "params": {
+    "supplier_country": "France"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "France Supply 3",
+  "answer": "France Supply 3"
+ },
+ {
+  "question_id": "F127",
+  "route": {
+   "params": {
+    "supplier_country": "Italy"
+   },
+   "recipe": "procurement_worst_supplier"
+  },
+  "rules_route": {
+   "recipe": "procurement_worst_supplier",
+   "params": {
+    "supplier_country": "Italy"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "Italy Supply 4",
+  "answer": "Italy Supply 4"
+ },
+ {
+  "question_id": "F128",
+  "route": {
+   "params": {
+    "supplier_country": "Spain"
+   },
+   "recipe": "procurement_worst_supplier"
+  },
+  "rules_route": {
+   "recipe": "procurement_worst_supplier",
+   "params": {
+    "supplier_country": "Spain"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "Spain Supply 2",
+  "answer": "Spain Supply 2"
+ },
+ {
+  "question_id": "F129",
+  "route": {
+   "params": {
+    "warehouse": "North"
+   },
+   "recipe": "inventory_on_hand"
+  },
+  "rules_route": {
+   "recipe": "inventory_on_hand",
+   "params": {
+    "warehouse": "North"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "13310",
+  "answer": "13310"
+ },
+ {
+  "question_id": "F130",
+  "route": {
+   "params": {
+    "warehouse": "South"
+   },
+   "recipe": "inventory_on_hand"
+  },
+  "rules_route": {
+   "recipe": "inventory_on_hand",
+   "params": {
+    "warehouse": "South"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "12047",
+  "answer": "12047"
+ },
+ {
+  "question_id": "F131",
+  "route": {
+   "params": {
+    "warehouse": "East"
+   },
+   "recipe": "inventory_on_hand"
+  },
+  "rules_route": {
+   "recipe": "inventory_on_hand",
+   "params": {
+    "warehouse": "East"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "13365",
+  "answer": "13365"
+ },
+ {
+  "question_id": "F132",
+  "route": {
+   "params": {
+    "warehouse": "West"
+   },
+   "recipe": "inventory_on_hand"
+  },
+  "rules_route": {
+   "recipe": "inventory_on_hand",
+   "params": {
+    "warehouse": "West"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "12546",
+  "answer": "12546"
+ },
+ {
+  "question_id": "F133",
+  "route": {
+   "params": {
+    "warehouse": "North"
+   },
+   "recipe": "inventory_value"
+  },
+  "rules_route": {
+   "recipe": "inventory_value",
+   "params": {
+    "warehouse": "North"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "3485457.57",
+  "answer": "3485457.57"
+ },
+ {
+  "question_id": "F134",
+  "route": {
+   "params": {
+    "warehouse": "South"
+   },
+   "recipe": "inventory_value"
+  },
+  "rules_route": {
+   "recipe": "inventory_value",
+   "params": {
+    "warehouse": "South"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "3037394.28",
+  "answer": "3037394.28"
+ },
+ {
+  "question_id": "F135",
+  "route": {
+   "params": {
+    "warehouse": "East"
+   },
+   "recipe": "inventory_value"
+  },
+  "rules_route": {
+   "recipe": "inventory_value",
+   "params": {
+    "warehouse": "East"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "3653622.87",
+  "answer": "3653622.87"
+ },
+ {
+  "question_id": "F136",
+  "route": {
+   "params": {
+    "warehouse": "West"
+   },
+   "recipe": "inventory_value"
+  },
+  "rules_route": {
+   "recipe": "inventory_value",
+   "params": {
+    "warehouse": "West"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "3701135.02",
+  "answer": "3701135.02"
+ },
+ {
+  "question_id": "F137",
+  "route": {
+   "params": {
+    "warehouse": "North"
+   },
+   "recipe": "inventory_below_reorder"
+  },
+  "rules_route": {
+   "recipe": "inventory_below_reorder",
+   "params": {
+    "warehouse": "North"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "19",
+  "answer": "19"
+ },
+ {
+  "question_id": "F138",
+  "route": {
+   "params": {
+    "warehouse": "South"
+   },
+   "recipe": "inventory_below_reorder"
+  },
+  "rules_route": {
+   "recipe": "inventory_below_reorder",
+   "params": {
+    "warehouse": "South"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "21",
+  "answer": "21"
+ },
+ {
+  "question_id": "F139",
+  "route": {
+   "params": {
+    "warehouse": "East"
+   },
+   "recipe": "inventory_below_reorder"
+  },
+  "rules_route": {
+   "recipe": "inventory_below_reorder",
+   "params": {
+    "warehouse": "East"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "15",
+  "answer": "15"
+ },
+ {
+  "question_id": "F140",
+  "route": {
+   "params": {
+    "warehouse": "West"
+   },
+   "recipe": "inventory_below_reorder"
+  },
+  "rules_route": {
+   "recipe": "inventory_below_reorder",
+   "params": {
+    "warehouse": "West"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "22",
+  "answer": "22"
+ },
+ {
+  "question_id": "F141",
+  "route": {
+   "params": {
+    "warehouse": "North"
+   },
+   "recipe": "inventory_reorder_units"
+  },
+  "rules_route": {
+   "recipe": "inventory_reorder_units",
+   "params": {
+    "warehouse": "North"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "4298",
+  "answer": "4298"
+ },
+ {
+  "question_id": "F142",
+  "route": {
+   "params": {
+    "warehouse": "South"
+   },
+   "recipe": "inventory_reorder_units"
+  },
+  "rules_route": {
+   "recipe": "inventory_reorder_units",
+   "params": {
+    "warehouse": "South"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "5251",
+  "answer": "5251"
+ },
+ {
+  "question_id": "F143",
+  "route": {
+   "params": {
+    "warehouse": "East"
+   },
+   "recipe": "inventory_reorder_units"
+  },
+  "rules_route": {
+   "recipe": "inventory_reorder_units",
+   "params": {
+    "warehouse": "East"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "3637",
+  "answer": "3637"
+ },
+ {
+  "question_id": "F144",
+  "route": {
+   "params": {
+    "warehouse": "West"
+   },
+   "recipe": "inventory_reorder_units"
+  },
+  "rules_route": {
+   "recipe": "inventory_reorder_units",
+   "params": {
+    "warehouse": "West"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "6169",
+  "answer": "6169"
+ },
+ {
+  "question_id": "F145",
+  "route": {
+   "params": {
+    "refund_reason": "billing_error"
+   },
+   "recipe": "returns_restockable_pct"
+  },
+  "rules_route": {
+   "recipe": "returns_restockable_pct",
+   "params": {
+    "refund_reason": "billing_error"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "52.08",
+  "answer": "52.08"
+ },
+ {
+  "question_id": "F146",
+  "route": {
+   "params": {
+    "refund_reason": "customer_return"
+   },
+   "recipe": "returns_restockable_pct"
+  },
+  "rules_route": {
+   "recipe": "returns_restockable_pct",
+   "params": {
+    "refund_reason": "customer_return"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "57.14",
+  "answer": "57.14"
+ },
+ {
+  "question_id": "F147",
+  "route": {
+   "params": {
+    "refund_reason": "defect"
+   },
+   "recipe": "returns_restockable_pct"
+  },
+  "rules_route": {
+   "recipe": "returns_restockable_pct",
+   "params": {
+    "refund_reason": "defect"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "52.94",
+  "answer": "52.94"
+ },
+ {
+  "question_id": "F148",
+  "route": {
+   "params": {
+    "refund_reason": "late_delivery"
+   },
+   "recipe": "returns_restockable_pct"
+  },
+  "rules_route": {
+   "recipe": "returns_restockable_pct",
+   "params": {
+    "refund_reason": "late_delivery"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "64.49",
+  "answer": "64.49"
+ },
+ {
+  "question_id": "F149",
+  "route": {
+   "params": {
+    "category": "Laptop"
+   },
+   "recipe": "returns_recovered_value"
+  },
+  "rules_route": {
+   "recipe": "returns_recovered_value",
+   "params": {
+    "category": "Laptop"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "14562.18",
+  "answer": "14562.18"
+ },
+ {
+  "question_id": "F150",
+  "route": {
+   "params": {
+    "category": "Phone"
+   },
+   "recipe": "returns_recovered_value"
+  },
+  "rules_route": {
+   "recipe": "returns_recovered_value",
+   "params": {
+    "category": "Phone"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "7620.15",
+  "answer": "7620.15"
+ },
+ {
+  "question_id": "F151",
+  "route": {
+   "params": {
+    "case_id": "OF01"
+   },
+   "recipe": "opt_baseline_cost"
+  },
+  "rules_route": {
+   "recipe": "opt_baseline_cost",
+   "params": {
+    "case_id": "OF01"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "1085.24",
+  "answer": "1085.24"
+ },
+ {
+  "question_id": "F152",
+  "route": {
+   "params": {
+    "case_id": "OF01"
+   },
+   "recipe": "opt_cost_change"
+  },
+  "rules_route": {
+   "recipe": "opt_cost_change",
+   "params": {
+    "case_id": "OF01"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "176.53",
+  "answer": "176.53"
+ },
+ {
+  "question_id": "F153",
+  "route": {
+   "params": {
+    "case_id": "OF02"
+   },
+   "recipe": "opt_baseline_cost"
+  },
+  "rules_route": {
+   "recipe": "opt_baseline_cost",
+   "params": {
+    "case_id": "OF02"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "780.14",
+  "answer": "780.14"
+ },
+ {
+  "question_id": "F154",
+  "route": {
+   "params": {
+    "case_id": "OF02"
+   },
+   "recipe": "opt_cost_change"
+  },
+  "rules_route": {
+   "recipe": "opt_cost_change",
+   "params": {
+    "case_id": "OF02"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "72.78",
+  "answer": "72.78"
+ },
+ {
+  "question_id": "F155",
+  "route": {
+   "params": {
+    "case_id": "OF03"
+   },
+   "recipe": "opt_baseline_cost"
+  },
+  "rules_route": {
+   "recipe": "opt_baseline_cost",
+   "params": {
+    "case_id": "OF03"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "1008.33",
+  "answer": "1008.33"
+ },
+ {
+  "question_id": "F156",
+  "route": {
+   "params": {
+    "case_id": "OF03"
+   },
+   "recipe": "opt_cost_change"
+  },
+  "rules_route": {
+   "recipe": "opt_cost_change",
+   "params": {
+    "case_id": "OF03"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "86.88",
+  "answer": "86.88"
+ },
+ {
+  "question_id": "F157",
+  "route": {
+   "params": {
+    "case_id": "OF04"
+   },
+   "recipe": "opt_baseline_cost"
+  },
+  "rules_route": {
+   "recipe": "opt_baseline_cost",
+   "params": {
+    "case_id": "OF04"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "1017.31",
+  "answer": "1017.31"
+ },
+ {
+  "question_id": "F158",
+  "route": {
+   "params": {
+    "case_id": "OF04"
+   },
+   "recipe": "opt_cost_change"
+  },
+  "rules_route": {
+   "recipe": "opt_cost_change",
+   "params": {
+    "case_id": "OF04"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "-14.05",
+  "answer": "-14.05"
+ },
+ {
+  "question_id": "F159",
+  "route": {
+   "params": {
+    "case_id": "OF05"
+   },
+   "recipe": "opt_baseline_cost"
+  },
+  "rules_route": {
+   "recipe": "opt_baseline_cost",
+   "params": {
+    "case_id": "OF05"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "1102.80",
+  "answer": "1102.80"
+ },
+ {
+  "question_id": "F160",
+  "route": {
+   "params": {
+    "case_id": "OF05"
+   },
+   "recipe": "opt_cost_change"
+  },
+  "rules_route": {
+   "recipe": "opt_cost_change",
+   "params": {
+    "case_id": "OF05"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "28.61",
+  "answer": "28.61"
+ },
+ {
+  "question_id": "F161",
+  "route": {
+   "params": {
+    "case_id": "OF06"
+   },
+   "recipe": "opt_baseline_cost"
+  },
+  "rules_route": {
+   "recipe": "opt_baseline_cost",
+   "params": {
+    "case_id": "OF06"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "1004.91",
+  "answer": "1004.91"
+ },
+ {
+  "question_id": "F162",
+  "route": {
+   "params": {
+    "case_id": "OF06"
+   },
+   "recipe": "opt_cost_change"
+  },
+  "rules_route": {
+   "recipe": "opt_cost_change",
+   "params": {
+    "case_id": "OF06"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "156.03",
+  "answer": "156.03"
+ },
+ {
+  "question_id": "F163",
+  "route": {
+   "params": {
+    "case_id": "OF07"
+   },
+   "recipe": "opt_baseline_cost"
+  },
+  "rules_route": {
+   "recipe": "opt_baseline_cost",
+   "params": {
+    "case_id": "OF07"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "1043.10",
+  "answer": "1043.10"
+ },
+ {
+  "question_id": "F164",
+  "route": {
+   "params": {
+    "case_id": "OF07"
+   },
+   "recipe": "opt_cost_change"
+  },
+  "rules_route": {
+   "recipe": "opt_cost_change",
+   "params": {
+    "case_id": "OF07"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "1.47",
+  "answer": "1.47"
+ },
+ {
+  "question_id": "F165",
+  "route": {
+   "params": {
+    "case_id": "OF08"
+   },
+   "recipe": "opt_baseline_cost"
+  },
+  "rules_route": {
+   "recipe": "opt_baseline_cost",
+   "params": {
+    "case_id": "OF08"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "984.17",
+  "answer": "984.17"
+ },
+ {
+  "question_id": "F166",
+  "route": {
+   "params": {
+    "case_id": "OF08"
+   },
+   "recipe": "opt_cost_change"
+  },
+  "rules_route": {
+   "recipe": "opt_cost_change",
+   "params": {
+    "case_id": "OF08"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "76.46",
+  "answer": "76.46"
+ },
+ {
+  "question_id": "F167",
+  "route": {
+   "params": {
+    "case_id": "OF09"
+   },
+   "recipe": "opt_baseline_cost"
+  },
+  "rules_route": {
+   "recipe": "opt_baseline_cost",
+   "params": {
+    "case_id": "OF09"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "983.01",
+  "answer": "983.01"
+ },
+ {
+  "question_id": "F168",
+  "route": {
+   "params": {
+    "case_id": "OF09"
+   },
+   "recipe": "opt_cost_change"
+  },
+  "rules_route": {
+   "recipe": "opt_cost_change",
+   "params": {
+    "case_id": "OF09"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "0.00",
+  "answer": "0.00"
+ },
+ {
+  "question_id": "F169",
+  "route": {
+   "params": {
+    "case_id": "OF10"
+   },
+   "recipe": "opt_baseline_cost"
+  },
+  "rules_route": {
+   "recipe": "opt_baseline_cost",
+   "params": {
+    "case_id": "OF10"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "979.47",
+  "answer": "979.47"
+ },
+ {
+  "question_id": "F170",
+  "route": {
+   "params": {
+    "case_id": "OF10"
+   },
+   "recipe": "opt_cost_change"
+  },
+  "rules_route": {
+   "recipe": "opt_cost_change",
+   "params": {
+    "case_id": "OF10"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "22.02",
+  "answer": "22.02"
+ },
+ {
+  "question_id": "F171",
+  "route": {
+   "params": {
+    "case_id": "OF11"
+   },
+   "recipe": "opt_baseline_cost"
+  },
+  "rules_route": {
+   "recipe": "opt_baseline_cost",
+   "params": {
+    "case_id": "OF11"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "993.14",
+  "answer": "993.14"
+ },
+ {
+  "question_id": "F172",
+  "route": {
+   "params": {
+    "case_id": "OF11"
+   },
+   "recipe": "opt_cost_change"
+  },
+  "rules_route": {
+   "recipe": "opt_cost_change",
+   "params": {
+    "case_id": "OF11"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "193.91",
+  "answer": "193.91"
+ },
+ {
+  "question_id": "F173",
+  "route": {
+   "params": {
+    "case_id": "OF12"
+   },
+   "recipe": "opt_baseline_cost"
+  },
+  "rules_route": {
+   "recipe": "opt_baseline_cost",
+   "params": {
+    "case_id": "OF12"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "1174.36",
+  "answer": "1174.36"
+ },
+ {
+  "question_id": "F174",
+  "route": {
+   "params": {
+    "case_id": "OF12"
+   },
+   "recipe": "opt_cost_change"
+  },
+  "rules_route": {
+   "recipe": "opt_cost_change",
+   "params": {
+    "case_id": "OF12"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "10.84",
+  "answer": "10.84"
+ },
+ {
+  "question_id": "F175",
+  "route": {
+   "params": {
+    "case_id": "OF13"
+   },
+   "recipe": "opt_baseline_cost"
+  },
+  "rules_route": {
+   "recipe": "opt_baseline_cost",
+   "params": {
+    "case_id": "OF13"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "1083.78",
+  "answer": "1083.78"
+ },
+ {
+  "question_id": "F176",
+  "route": {
+   "params": {
+    "case_id": "OF13"
+   },
+   "recipe": "opt_cost_change"
+  },
+  "rules_route": {
+   "recipe": "opt_cost_change",
+   "params": {
+    "case_id": "OF13"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "35.44",
+  "answer": "35.44"
+ },
+ {
+  "question_id": "F177",
+  "route": {
+   "params": {
+    "case_id": "OF14"
+   },
+   "recipe": "opt_baseline_cost"
+  },
+  "rules_route": {
+   "recipe": "opt_baseline_cost",
+   "params": {
+    "case_id": "OF14"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "989.38",
+  "answer": "989.38"
+ },
+ {
+  "question_id": "F178",
+  "route": {
+   "params": {
+    "case_id": "OF14"
+   },
+   "recipe": "opt_cost_change"
+  },
+  "rules_route": {
+   "recipe": "opt_cost_change",
+   "params": {
+    "case_id": "OF14"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "-27.38",
+  "answer": "-27.38"
+ },
+ {
+  "question_id": "F179",
+  "route": {
+   "params": {
+    "case_id": "OF15"
+   },
+   "recipe": "opt_baseline_cost"
+  },
+  "rules_route": {
+   "recipe": "opt_baseline_cost",
+   "params": {
+    "case_id": "OF15"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "1012.47",
+  "answer": "1012.47"
+ },
+ {
+  "question_id": "F180",
+  "route": {
+   "params": {
+    "case_id": "OF15"
+   },
+   "recipe": "opt_cost_change"
+  },
+  "rules_route": {
+   "recipe": "opt_cost_change",
+   "params": {
+    "case_id": "OF15"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "23.90",
+  "answer": "23.90"
+ },
+ {
+  "question_id": "F181",
+  "route": {
+   "params": {
+    "case_id": "FLOW_F01"
+   },
+   "recipe": "flow_baseline"
+  },
+  "rules_route": {
+   "recipe": "flow_baseline",
+   "params": {
+    "case_id": "FLOW_F01"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "280.81",
+  "answer": "280.81"
+ },
+ {
+  "question_id": "F182",
+  "route": {
+   "params": {
+    "case_id": "FLOW_F01"
+   },
+   "recipe": "flow_change"
+  },
+  "rules_route": {
+   "recipe": "flow_change",
+   "params": {
+    "case_id": "FLOW_F01"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "-49.36",
+  "answer": "-49.36"
+ },
+ {
+  "question_id": "F183",
+  "route": {
+   "params": {
+    "case_id": "FLOW_F02"
+   },
+   "recipe": "flow_baseline"
+  },
+  "rules_route": {
+   "recipe": "flow_baseline",
+   "params": {
+    "case_id": "FLOW_F02"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "427.41",
+  "answer": "427.41"
+ },
+ {
+  "question_id": "F184",
+  "route": {
+   "params": {
+    "case_id": "FLOW_F02"
+   },
+   "recipe": "flow_change"
+  },
+  "rules_route": {
+   "recipe": "flow_change",
+   "params": {
+    "case_id": "FLOW_F02"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "-60.56",
+  "answer": "-60.56"
+ },
+ {
+  "question_id": "F185",
+  "route": {
+   "params": {
+    "case_id": "FLOW_F03"
+   },
+   "recipe": "flow_baseline"
+  },
+  "rules_route": {
+   "recipe": "flow_baseline",
+   "params": {
+    "case_id": "FLOW_F03"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "531.66",
+  "answer": "531.66"
+ },
+ {
+  "question_id": "F186",
+  "route": {
+   "params": {
+    "case_id": "FLOW_F03"
+   },
+   "recipe": "flow_change"
+  },
+  "rules_route": {
+   "recipe": "flow_change",
+   "params": {
+    "case_id": "FLOW_F03"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "6.05",
+  "answer": "6.05"
+ },
+ {
+  "question_id": "F187",
+  "route": {
+   "params": {
+    "case_id": "FLOW_F04"
+   },
+   "recipe": "flow_baseline"
+  },
+  "rules_route": {
+   "recipe": "flow_baseline",
+   "params": {
+    "case_id": "FLOW_F04"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "435.64",
+  "answer": "435.64"
+ },
+ {
+  "question_id": "F188",
+  "route": {
+   "params": {
+    "case_id": "FLOW_F04"
+   },
+   "recipe": "flow_change"
+  },
+  "rules_route": {
+   "recipe": "flow_change",
+   "params": {
+    "case_id": "FLOW_F04"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "-28.83",
+  "answer": "-28.83"
+ },
+ {
+  "question_id": "F189",
+  "route": {
+   "params": {
+    "case_id": "FLOW_F05"
+   },
+   "recipe": "flow_baseline"
+  },
+  "rules_route": {
+   "recipe": "flow_baseline",
+   "params": {
+    "case_id": "FLOW_F05"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "287.96",
+  "answer": "287.96"
+ },
+ {
+  "question_id": "F190",
+  "route": {
+   "params": {
+    "case_id": "FLOW_F05"
+   },
+   "recipe": "flow_change"
+  },
+  "rules_route": {
+   "recipe": "flow_change",
+   "params": {
+    "case_id": "FLOW_F05"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "-34.86",
+  "answer": "-34.86"
+ },
+ {
+  "question_id": "F191",
+  "route": {
+   "params": {
+    "case_id": "FLOW_F06"
+   },
+   "recipe": "flow_baseline"
+  },
+  "rules_route": {
+   "recipe": "flow_baseline",
+   "params": {
+    "case_id": "FLOW_F06"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "194.39",
+  "answer": "194.39"
+ },
+ {
+  "question_id": "F192",
+  "route": {
+   "params": {
+    "case_id": "FLOW_F06"
+   },
+   "recipe": "flow_change"
+  },
+  "rules_route": {
+   "recipe": "flow_change",
+   "params": {
+    "case_id": "FLOW_F06"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "8.91",
+  "answer": "8.91"
+ },
+ {
+  "question_id": "F193",
+  "route": {
+   "params": {
+    "case_id": "FLOW_F07"
+   },
+   "recipe": "flow_baseline"
+  },
+  "rules_route": {
+   "recipe": "flow_baseline",
+   "params": {
+    "case_id": "FLOW_F07"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "306.80",
+  "answer": "306.80"
+ },
+ {
+  "question_id": "F194",
+  "route": {
+   "params": {
+    "case_id": "FLOW_F07"
+   },
+   "recipe": "flow_change"
+  },
+  "rules_route": {
+   "recipe": "flow_change",
+   "params": {
+    "case_id": "FLOW_F07"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "-77.22",
+  "answer": "-77.22"
+ },
+ {
+  "question_id": "F195",
+  "route": {
+   "params": {
+    "case_id": "FLOW_F08"
+   },
+   "recipe": "flow_baseline"
+  },
+  "rules_route": {
+   "recipe": "flow_baseline",
+   "params": {
+    "case_id": "FLOW_F08"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "344.70",
+  "answer": "344.70"
+ },
+ {
+  "question_id": "F196",
+  "route": {
+   "params": {
+    "case_id": "FLOW_F08"
+   },
+   "recipe": "flow_change"
+  },
+  "rules_route": {
+   "recipe": "flow_change",
+   "params": {
+    "case_id": "FLOW_F08"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "-49.30",
+  "answer": "-49.30"
+ },
+ {
+  "question_id": "F197",
+  "route": {
+   "params": {
+    "case_id": "FLOW_F09"
+   },
+   "recipe": "flow_baseline"
+  },
+  "rules_route": {
+   "recipe": "flow_baseline",
+   "params": {
+    "case_id": "FLOW_F09"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "190.99",
+  "answer": "190.99"
+ },
+ {
+  "question_id": "F198",
+  "route": {
+   "params": {
+    "case_id": "FLOW_F09"
+   },
+   "recipe": "flow_change"
+  },
+  "rules_route": {
+   "recipe": "flow_change",
+   "params": {
+    "case_id": "FLOW_F09"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "49.75",
+  "answer": "49.75"
+ },
+ {
+  "question_id": "F199",
+  "route": {
+   "params": {
+    "case_id": "FLOW_F10"
+   },
+   "recipe": "flow_baseline"
+  },
+  "rules_route": {
+   "recipe": "flow_baseline",
+   "params": {
+    "case_id": "FLOW_F10"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "356.46",
+  "answer": "356.46"
+ },
+ {
+  "question_id": "F200",
+  "route": {
+   "params": {
+    "case_id": "FLOW_F10"
+   },
+   "recipe": "flow_change"
+  },
+  "rules_route": {
+   "recipe": "flow_change",
+   "params": {
+    "case_id": "FLOW_F10"
+   }
+  },
+  "vote_agreement": 1.0,
+  "flags": [],
+  "rules_answer": "-2.46",
+  "answer": "-2.46"
+ }
+]
