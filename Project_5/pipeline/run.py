@@ -32,12 +32,13 @@ def main():
     questions = list(csv.DictReader(qfile.open(encoding="utf-8-sig")))[: a.limit]
     llm = LLMRouter(vocab, votes=a.votes) if a.router == "llm" else None
 
+    routed = llm.route_many([(q["question_id"], q["question"]) for q in questions]) if llm else {}
     report, rows = [], []
     for q in questions:
         qid, text, atype = q["question_id"], q["question"], q.get("answer_type", "number")
         rule = rules_route(text, vocab)
         if llm:
-            route, agreement = llm.route(text)
+            route, agreement = routed[qid]
         else:
             route, agreement = rule, None
         entry = {"question_id": qid, "route": route, "rules_route": rule, "vote_agreement": agreement, "flags": []}

@@ -111,20 +111,24 @@ class LLMRouter:
         LOG_DIR.mkdir(exist_ok=True)
         self.log_path = LOG_DIR / log_name
 
-    def _call(self, messages, temperature):
-        body = json.dumps({"model": self.model, "messages": messages, "temperature": temperature, "max_tokens": 300}).encode()
+    def _call(self, messages, temperature, max_tokens=300):
+        body = json.dumps({"model": self.model, "messages": messages, "temperature": temperature, "max_tokens": max_tokens}).encode()
         req = urllib.request.Request(f"{self.base}/chat/completions", data=body,
                                      headers={"Content-Type": "application/json", "Authorization": f"Bearer {self.key}"})
         t0 = time.time()
-        for attempt in range(4):
+        for attempt in range(60):
             try:
                 with urllib.request.urlopen(req, timeout=120) as r:
                     out = json.loads(r.read())
                 break
             except Exception as e:
-                if attempt == 3:
+                if attempt == 59:
                     raise
-                time.sleep(2 * (attempt + 1))
+                wait = 2 * (attempt + 1)
+                if getattr(e, "code", None) == 429:
+                    wait = 5  # shared team quota: poll for a free slot
+                    print("  rate limited, retrying in 5s", flush=True)
+                time.sleep(wait)
         text = out["choices"][0]["message"]["content"]
         with self.log_path.open("a", encoding="utf-8") as f:
             f.write(json.dumps({"ts": time.strftime("%Y-%m-%dT%H:%M:%S"), "model": self.model, "returned_model": out.get("model"),
@@ -154,6 +158,55 @@ class LLMRouter:
         keys = [json.dumps(o, sort_keys=True) for o in outs]
         best, n = Counter(keys).most_common(1)[0]
         return json.loads(best), n / len(outs)
+
+
+    # ---- batched routing (few requests; needed under a shared request-rate limit) ----
+    def _batch_once(self, items, temperature):
+        """items: [(qid, question)] -> {qid: route-or-error-dict}"""
+        result, pending, note = {}, list(items), ""
+        for _ in range(3):
+            if not pending:
+                break
+            user = (note + "Route each question below. Reply with a JSON array only, one object per question: "
+                    '[{"id": "<id>", "recipe": "<name>", "params": {...}}, ...]\n\n'
+                    + "\n".join(f"[{qid}] {text}" for qid, text in pending))
+            text = self._call([{"role": "system", "content": self.system}, {"role": "user", "content": user}],
+                              temperature, max_tokens=120 * len(pending) + 200)
+            try:
+                arr = json.loads(re.search(r"\[.*\]", text, re.S).group(0))
+            except Exception as e:
+                note = f"Your previous reply was not a valid JSON array ({e}). "
+                continue
+            errors, got = [], {}
+            for obj in arr if isinstance(arr, list) else []:
+                if isinstance(obj, dict):
+                    got[str(obj.get("id"))] = obj
+            for qid, _ in pending:
+                route, err = validate(got.get(qid, {}), self.vocab) if qid in got else (None, "missing from reply")
+                if route:
+                    result[qid] = route
+                else:
+                    result[qid] = {"recipe": None, "params": {}, "error": err}
+                    errors.append(f"{qid}: {err}")
+            pending = [(qid, t) for qid, t in pending if result[qid].get("error")]
+            note = "The validator rejected earlier answers: " + "; ".join(errors) + ". Correct them. "
+        return result
+
+    def route_many(self, items, batch_size=20):
+        """Self-consistency over batches: {qid: (majority route, agreement share)}."""
+        votes = {qid: [] for qid, _ in items}
+        for v in range(self.votes):
+            for i in range(0, len(items), batch_size):
+                chunk = items[i:i + batch_size]
+                out = self._batch_once(chunk, 0.0 if v == 0 else 0.4)
+                for qid, _ in chunk:
+                    votes[qid].append(json.dumps(out.get(qid, {"recipe": None, "params": {}, "error": "no reply"}), sort_keys=True))
+                print(f"  vote {v + 1}/{self.votes}: routed {min(i + batch_size, len(items))}/{len(items)}", flush=True)
+        final = {}
+        for qid, ks in votes.items():
+            best, n = Counter(ks).most_common(1)[0]
+            final[qid] = (json.loads(best), n / len(ks))
+        return final
 
 
 # ---------------- deterministic cross-check (no model) ----------------
