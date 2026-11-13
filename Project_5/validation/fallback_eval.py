@@ -4,11 +4,14 @@ Test set: the ten organizer-solved examples (true answers) plus the first Stage 
 every recipe used in P001-P150 (reference = our recipe answer, itself unverified).
 Scenario questions (optimizer, flow simulation) are excluded: they need the dedicated engines.
 """
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "pipeline"))
+
 import csv
 import json
-import sys
 from concurrent.futures import ThreadPoolExecutor
-from pathlib import Path
 
 import recipes as R
 from codegen import CodeGen, describe_tables

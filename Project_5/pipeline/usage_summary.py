@@ -10,7 +10,7 @@ LOGS = Path(__file__).resolve().parent.parent / "logs"
 def main():
     rows = []
     for name, purpose in (("router_calls.jsonl", "routing"), ("toy_calls.jsonl", "toy-example baseline"),
-                          ("codegen_calls.jsonl", "code-writing fallback")):
+                          ("codegen_calls.jsonl", "code-writing fallback"), ("schema_map_calls.jsonl", "column mapping rehearsal")):
         if (LOGS / name).exists():
             rows += [dict(json.loads(line), purpose=purpose) for line in (LOGS / name).open(encoding="utf-8")]
     with (LOGS / "model_usage.csv").open("w", newline="", encoding="utf-8") as f:

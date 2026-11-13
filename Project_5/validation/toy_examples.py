@@ -3,10 +3,13 @@
 Unlike the pipeline, the model here sees the raw tables and must apply the rules and do
 the arithmetic itself. This measures what the model can do without the deterministic layer.
 """
-import csv
-import re
 import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "pipeline"))
+
+import csv
+import re
 
 from router import LLMRouter
 

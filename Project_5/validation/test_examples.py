@@ -1,5 +1,8 @@
 """Regression test: the 10 organizer-solved practice examples must reproduce exactly."""
 import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "pipeline"))
 
 import recipes as R
 from data import Data
@@ -18,8 +21,8 @@ CASES = [
 ]
 
 
-def main(data_dir="../stage1/datasets"):
-    D = Data(data_dir)
+def main(data_dir=Path(__file__).resolve().parent.parent / "stage1" / "datasets", schema_map=None):
+    D = Data(data_dir, schema_map)
     fails = 0
     for qid, expected, atype, name, params in CASES:
         try:

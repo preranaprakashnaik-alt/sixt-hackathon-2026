@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Two Braincells - Project 5</title>
+<style>
+  @page { size: 13.333in 7.5in; margin: 0; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Segoe UI", Arial, sans-serif; color: #1c1c1c; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .slide { width: 13.333in; height: 7.5in; padding: 0.55in 0.75in 0.5in; page-break-after: always; position: relative; overflow: hidden; background: #fff; }
+  .slide:last-child { page-break-after: auto; }
+  .bar { position: absolute; left: 0; top: 0; width: 100%; height: 0.14in; background: #ff5f00; }
+  .foot { position: absolute; left: 0.75in; right: 0.75in; bottom: 0.28in; font-size: 11pt; color: #8a8a8a; display: flex; justify-content: space-between; }
+  h1 { font-size: 30pt; margin: 0.05in 0 0.06in; line-height: 1.1; }
+  h2 { font-size: 14.5pt; font-weight: 400; color: #555; margin: 0 0 0.2in; }
+  h3 { font-size: 13pt; margin: 0 0 0.06in; color: #ff5f00; text-transform: uppercase; letter-spacing: 0.5px; }
+  p, li { font-size: 13.5pt; line-height: 1.3; margin: 0 0 0.06in; }
+  ul { margin: 0; padding-left: 0.24in; }
+  .cols { display: flex; gap: 0.4in; }
+  .col { flex: 1; }
+  .card { background: #f5f5f5; border-radius: 10px; padding: 0.17in 0.22in; }
+  .dark { background: #1c1c1c; color: #fff; }
+  .dark h3 { color: #ff8a40; }
+  .flow { display: flex; align-items: stretch; gap: 0.1in; margin-bottom: 0.2in; }
+  .box { flex: 1; border-radius: 10px; padding: 0.13in 0.14in; background: #f5f5f5; font-size: 12pt; line-height: 1.25; }
+  .box b { display: block; font-size: 13pt; margin-bottom: 0.05in; }
+  .box.model { background: #ff5f00; color: #fff; }
+  .box.code { background: #1c1c1c; color: #fff; }
+  .arrow { align-self: center; font-size: 20pt; color: #ff5f00; }
+  code, .mono { font-family: Consolas, "Courier New", monospace; font-size: 11pt; }
+  table { border-collapse: collapse; width: 100%; }
+  td, th { font-size: 13.5pt; padding: 0.06in 0.1in; border-bottom: 1px solid #ddd; text-align: left; vertical-align: top; }
+  th { color: #666; font-weight: 600; font-size: 11.5pt; text-transform: uppercase; }
+  td.n { font-weight: 700; white-space: nowrap; color: #ff5f00; }
+  .big { font-size: 34pt; font-weight: 700; color: #ff5f00; line-height: 1; }
+  .small { font-size: 12.5pt; color: #666; }
+  .title { display: flex; flex-direction: column; justify-content: center; height: 100%; }
+  .title h1 { font-size: 48pt; }
+</style>
+</head>
+<body>
+
+<section class="slide">
+  <div class="bar"></div>
+  <div class="title">
+    <p style="color:#ff5f00;font-weight:700;letter-spacing:1px">PROJECT 5 · SIXT + TUM ENTERPRISE DATA AGENT CHALLENGE</p>
+    <h1>The model reads.<br>The code calculates.</h1>
+    <h2 style="font-size:20pt;margin-bottom:0.45in">Trustworthy answers to business questions with a 31B open-weight model</h2>
+    <div class="cols">
+      <div class="col card"><h3>The problem</h3><p>"What was net revenue?" hides a dozen rules: which orders count, which exchange rate, how discounts and refunds are split. One slip gives a confident wrong number.</p></div>
+      <div class="col card"><h3>Our idea</h3><p>Let a small model do what it is good at: understanding the question. Let tested code do what must be exact: applying the rules and the arithmetic.</p></div>
+      <div class="col card dark"><h3>Result so far</h3><p>All 200 Stage 1 questions answered. 10 of 10 organizer-solved examples reproduced exactly.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Two Braincells · Prerana Prakash Naik, Harisankar Karamchand</span><span>1 / 5</span></div>
+</section>
+
+<section class="slide">
+  <div class="bar"></div>
+  <h1>How it works</h1>
+  <h2>One question, five steps. The model never sees data rows and never does arithmetic on the main path.</h2>
+  <div class="flow">
+    <div class="box"><b>1. Question</b>"What was net revenue from customers in Spain in Q2 2024?"</div><div class="arrow">➜</div>
+    <div class="box model"><b>2. Gemma 4 31B routes</b><span class="mono">{"recipe": "net_revenue", "params": {"country": "Spain", "period": "Q2"}}</span></div><div class="arrow">➜</div>
+    <div class="box"><b>3. Validator</b>Recipe exists? Values exist in the data? If not, ask again.</div><div class="arrow">➜</div>
+    <div class="box code"><b>4. Tested code</b>70 recipes on a verified data layer where every business rule is applied once.</div><div class="arrow">➜</div>
+    <div class="box"><b>5. Answer CSV</b>Formatted once: two decimals, exact counts, dates, true/false.</div>
+  </div>
+  <div class="cols">
+    <div class="col card"><h3>Verified data layer</h3><ul><li>Valid orders, resolved customer identities</li><li>Monthly exchange rates, discount and refund allocation</li><li>Late shipments, service-level breaches, reconciled stock</li><li>Stops with an error if an assumption breaks</li></ul></div>
+    <div class="col card"><h3>Two engines for the hard 50</h3><ul><li>Exact optimizer for the fulfilment decision cases</li><li>Step-by-step simulator for the warehouse event cases</li><li>Both with counterfactual mode</li></ul></div>
+    <div class="col card dark"><h3>When no recipe fits</h3><ul><li>Gemma says "no matching recipe"</li><li>Gemma writes the calculation as code on the verified tables</li><li>Three independent attempts; accepted only if results agree</li></ul></div>
+  </div>
+  <div class="foot"><span>Two Braincells · Project 5</span><span>2 / 5</span></div>
+</section>
+
+<section class="slide">
+  <div class="bar"></div>
+  <h1>How do we know the answers are right?</h1>
+  <h2>The answer key is private, so we built evidence from independent checks. Our own checks, not official feedback.</h2>
+  <div class="cols">
+    <div class="col" style="flex:1.55">
+      <table>
+        <tr><th>Check</th><th>Result</th></tr>
+        <tr><td>Organizer-solved practice examples reproduced exactly</td><td class="n">10 / 10</td></tr>
+        <tr><td>Gemma wrote the calculation itself with the recipes hidden; its answer matched ours</td><td class="n">58 / 59</td></tr>
+        <tr><td>Optimization cases: two independent exact solvers agree (baseline and counterfactual)</td><td class="n">30 / 30</td></tr>
+        <tr><td>Routing: three independent votes agree, and match a model-free keyword parser</td><td class="n">200 / 200</td></tr>
+        <tr><td>Renamed-column rehearsal for the final stage: columns mapped correctly by Gemma</td><td class="n">29 / 29</td></tr>
+        <tr><td>Invented questions with no recipe, answered by the fallback</td><td class="n">3 / 3</td></tr>
+      </table>
+    </div>
+    <div class="col">
+      <div class="card" style="margin-bottom:0.15in"><h3>Built-in guards</h3><ul><li>Joins declare expected cardinality; keys asserted unique</li><li>Refunds must sum to the eligible total: each counted once</li><li>Missing exchange rate is an error, never 1</li></ul></div>
+      <div class="card dark"><h3>What we do not know</h3><ul><li>Our real accuracy on the 200 scored questions</li><li>The 20 simulation answers have no independent check</li><li>Agreement between two implementations is not proof</li></ul></div>
+    </div>
+  </div>
+  <div class="foot"><span>Two Braincells · Project 5</span><span>3 / 5</span></div>
+</section>
+
+<section class="slide">
+  <div class="bar"></div>
+  <h1>A small model is enough</h1>
+  <h2>Gemma 4 31B: 30.7 billion parameters, open weights, under the 40B limit. It is the only model inside the pipeline.</h2>
+  <div class="cols" style="margin-bottom:0.25in">
+    <div class="col card"><div class="big">30</div><p>model calls to route all 200 questions three times</p></div>
+    <div class="col card"><div class="big">~770</div><p>tokens per question in the final Stage 1 run</p></div>
+    <div class="col card"><div class="big">~2 min</div><p>to compute all 200 answers on a laptop CPU</p></div>
+    <div class="col card"><div class="big">0</div><p>numbers produced by the model on the main path</p></div>
+  </div>
+  <div class="cols">
+    <div class="col card"><h3>What Gemma does</h3><ul><li>Understands each question and picks the calculation and its parameters</li><li>Writes the calculation itself when no recipe fits</li><li>Maps renamed columns for a new dataset</li></ul></div>
+    <div class="col card"><h3>What we learned</h3><ul><li>The gateway replays identical requests, so "three votes" were really two. We now shuffle the batches to make votes independent.</li><li>A shared rate limit pushed us to route 20 questions per call.</li></ul></div>
+    <div class="col card dark"><h3>Disclosure</h3><p>The pipeline code was written with an AI coding assistant, approved by the organizer and listed in our model declaration. It does not run in the pipeline.</p></div>
+  </div>
+  <div class="foot"><span>Two Braincells · Project 5</span><span>4 / 5</span></div>
+</section>
+
+<section class="slide">
+  <div class="bar"></div>
+  <h1>Why SIXT could use this</h1>
+  <h2>Define a metric once as tested code. Then anyone can ask for it in plain language.</h2>
+  <div class="cols">
+    <div class="col card"><h3>Business value</h3><ul><li><b>Trustworthy:</b> every number comes from versioned, tested code</li><li><b>Auditable:</b> each answer records which calculation and parameters produced it</li><li><b>Cheap:</b> a small model, under 1,000 tokens per question</li><li><b>Replaceable:</b> swap the model without changing any result</li></ul></div>
+    <div class="col card"><h3>Honest limits</h3><ul><li>The recipe library was built around the question types we saw</li><li>The code-writing fallback is less reliable than a tested recipe, and was measured on questions whose hard parts the data layer already solves</li><li>A new optimization or simulation task still needs hand-written code</li></ul></div>
+    <div class="col card dark"><h3>Next steps</h3><ul><li>Run the same pipeline on the final stage: new rules, renamed columns</li><li>Second independent implementation of the hardest metrics</li><li>Test the fallback on questions that need new base tables</li><li>Method report as an arXiv manuscript with the organizers</li></ul></div>
+  </div>
+  <div class="foot"><span>Two Braincells · Project 5 · code and evidence: Project_5/ in our repository</span><span>5 / 5</span></div>
+</section>
+
+</body>
+</html>

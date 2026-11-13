@@ -40,10 +40,11 @@ Custom orchestration, no agent framework. Files in `Project_5/pipeline/`:
 | `flow.py` | Event replay for the flow simulations: known-version selection, event ordering, sticky reservations, dispatch, cancellations, returns, rebates, what-if edits. |
 | `router.py` | The small-model router (catalogue prompt, validation against the data vocabulary, three votes, call logging) and a keyword parser used only as a cross-check. |
 | `codegen.py` | Fallback for questions with no matching recipe: the model writes `solve(D)` against the verified tables, using the stage's own business rules; restricted execution; three generations, accepted when at least two agree. |
-| `fallback_eval.py` | Measures the fallback by hiding the recipes (see section 3). |
+| `schema_map.py` | For a new stage with renamed columns: the model maps actual columns to our canonical names from the stage's data dictionary; code checks the mapping (one-to-one, complete, matching value kinds). |
 | `run.py` | End-to-end run; writes the answer CSV and a per-question report with flags. |
-| `test_examples.py` | Regression test on the ten organizer-solved practice examples. |
 | `usage_summary.py` | Writes the redacted model-usage record. |
+
+Checks and experiments are in `Project_5/validation/`: `test_examples.py` (the ten organizer-solved examples), `fallback_eval.py` (fallback with the recipes hidden), `drift_test.py` (renamed-column rehearsal), `toy_examples.py` (model-only baseline on the public toy examples) and `novel_questions.csv` (three invented questions with no recipe).
 
 Table selection and rule application are not left to the model: each recipe is bound to the base tables it needs, and those tables already have the rules applied.
 
@@ -53,7 +54,7 @@ Setup and run (Python 3.12):
 pip install -r Project_5/pipeline/requirements.txt
 # extract releases/problem7_student_start.zip to Project_5/stage1/
 cd Project_5/pipeline
-python test_examples.py
+python ../validation/test_examples.py
 # environment variables: P5_API_BASE, P5_API_KEY, P5_MODEL
 python run.py --stage ../stage1 --out ../public_answers.csv --router llm --votes 3
 python ../stage1/check_submission.py --questions ../stage1/public_leaderboard_questions.csv --submission ../public_answers.csv
@@ -71,11 +72,13 @@ Our own checks (there has been no official feedback on scored answers):
 - **Rounding.** Full precision is kept until the final formatting step (two decimals, ties to even); counts must be integral.
 - **Optimization cases.** Two independent exact methods (branch-and-bound and an integer program) agree on all 15 cases, baseline and counterfactual.
 - **Routing.** The model routed every question three times, with the questions shuffled into different batches for each vote (the gateway replays identical requests, so unshuffled repeats would not be independent). All three votes agreed on all 200 questions, and the resulting answers equal those from the independent keyword parser on all 200.
-- **Model-only baseline.** Given the raw tables of the three public toy examples and asked to reason and calculate by itself, Gemma 4 31B answered all three correctly at three different temperature settings (`pipeline/toy_examples.py`). The question wording included the rule hints from the published explanations. These are tiny tables; the result does not show that the model could do the same on the full dataset.
+- **Model-only baseline.** Given the raw tables of the three public toy examples and asked to reason and calculate by itself, Gemma 4 31B answered all three correctly at three different temperature settings (`validation/toy_examples.py`). The question wording included the rule hints from the published explanations. These are tiny tables; the result does not show that the model could do the same on the full dataset.
 - **CSV structure.** The organizers' `check_submission.py` reports 200 rows and 200 non-blank answers.
 
 - **Fallback measured with the recipes hidden.** For the ten organizer-solved examples and the first question of each of the 49 recipes used in questions 1-150 (59 questions), the model wrote the calculation itself, three generations each. Its majority answer matched the reference on 58 of 59, including 10 of 10 organizer answers. The agreement check accepted 57, all correct, and flagged 2 for review (one of them correct). On the first run 3 questions failed because our execution sandbox blocked harmless built-ins; after fixing the sandbox we re-ran only those 3. For 49 of the 59 the reference is our own recipe answer, so this shows that two implementations agree, not that both are right. The test is also easier than a truly new question type: the verified tables already contain the hard parts (validity, allocation, lateness, at-risk flags).
 - **New questions end to end.** Three questions we invented that have no recipe (average shipping cost for a carrier, ticket count by channel and region, top marketing channel by spend) were sent to the fallback by the router and answered correctly; a control question with a recipe was routed to it.
+
+- **Renamed columns (rehearsal for the final stage).** We made a copy of Stage 1 with 29 columns renamed across 9 tables and a data dictionary rewritten to the new names. The model mapped 29 of 29 columns correctly, and the ten solved examples reproduce on the drifted copy. The renames were our own invention; the real final-stage names may be harder.
 
 Representative errors found and fixed: the keyword parser first read "All families" from the explanatory sentence of every price-variance question, giving the same answer for three different product families; the fix was to read the family named at the start of the question.
 
@@ -127,7 +130,7 @@ SIXT could reuse the pattern directly: analysts encode a metric definition once 
 
 ## Demo
 
-`Project_5/submission/slides.pdf`: TODO
+`Project_5/submission/slides.pdf` (5 slides)
 
 ## 8. Publication follow-up after the Hackathon
 
