@@ -12,6 +12,7 @@ Environment: P5_API_BASE (e.g. https://api.together.xyz/v1), P5_API_KEY, P5_MODE
 """
 import json
 import os
+import random
 import re
 import time
 import urllib.request
@@ -196,8 +197,13 @@ class LLMRouter:
         """Self-consistency over batches: {qid: (majority route, agreement share)}."""
         votes = {qid: [] for qid, _ in items}
         for v in range(self.votes):
-            for i in range(0, len(items), batch_size):
-                chunk = items[i:i + batch_size]
+            # votes after the first shuffle the questions into different batches, so each vote is a
+            # genuinely different request (the gateway caches identical requests)
+            order = list(items)
+            if v:
+                random.Random(v).shuffle(order)
+            for i in range(0, len(order), batch_size):
+                chunk = order[i:i + batch_size]
                 out = self._batch_once(chunk, 0.0 if v == 0 else 0.4)
                 for qid, _ in chunk:
                     votes[qid].append(json.dumps(out.get(qid, {"recipe": None, "params": {}, "error": "no reply"}), sort_keys=True))

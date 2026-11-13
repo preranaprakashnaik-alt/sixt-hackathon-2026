@@ -33,7 +33,7 @@ def main(runs=3):
         tables = "\n\n".join(f"{f}:\n{(EX / f).read_text().strip()}" for f in files)
         for i in range(runs):
             text = llm._call([{"role": "system", "content": SYSTEM}, {"role": "user", "content": f"{tables}\n\nQuestion: {question}"}],
-                             0.0 if i == 0 else 0.4, max_tokens=1500)
+                             [0.0, 0.4, 0.7][i % 3], max_tokens=1500)  # distinct settings: the gateway caches identical requests
             m = re.findall(r"ANSWER:\s*\**\s*(-?[\d.,]+)", text)
             got = m[-1].replace(",", "").rstrip(".") if m else None
             ok = got is not None and abs(float(got) - float(gold[qid])) <= 0.01

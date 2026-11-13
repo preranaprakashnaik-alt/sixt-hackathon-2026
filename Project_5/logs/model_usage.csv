@@ -40,6 +40,36 @@ timestamp,purpose,model_requested,model_returned,temperature,question_ids,n_rout
 2026-11-13T11:01:52,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P141..P160,20,4605,694,0.17
 2026-11-13T11:01:52,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P161..P180,20,4633,708,0.24
 2026-11-13T11:01:53,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P181..P200,20,4613,708,0.16
+2026-11-13T11:24:49,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,P001..P020,20,4202,795,7.87
+2026-11-13T11:24:55,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,P021..P040,20,4314,782,6.19
+2026-11-13T11:25:01,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,P041..P060,20,4250,774,5.53
+2026-11-13T11:25:07,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,P061..P080,20,4221,789,6.31
+2026-11-13T11:25:44,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,P081..P100,20,4194,771,37.07
+2026-11-13T11:25:52,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,P101..P120,20,4503,678,7.28
+2026-11-13T11:26:00,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,P121..P140,20,4413,640,8.34
+2026-11-13T11:26:07,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,P141..P160,20,4605,694,7.4
+2026-11-13T11:26:13,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,P161..P180,20,4633,708,5.34
+2026-11-13T11:26:47,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,P181..P200,20,4613,708,34.46
+2026-11-13T11:26:53,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P034..P011,20,4442,733,6.34
+2026-11-13T11:27:00,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P181..P029,20,4385,774,7.03
+2026-11-13T11:27:11,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P077..P106,20,4341,726,10.98
+2026-11-13T11:27:17,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P112..P192,20,4399,771,5.11
+2026-11-13T11:27:23,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P197..P002,20,4382,721,6.23
+2026-11-13T11:27:28,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P030..P108,20,4399,692,5.53
+2026-11-13T11:27:47,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P067..P073,20,4317,738,18.86
+2026-11-13T11:27:55,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P078..P142,20,4439,722,8.1
+2026-11-13T11:28:03,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P194..P115,20,4447,722,7.28
+2026-11-13T11:28:10,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P179..P035,20,4397,743,7.64
+2026-11-13T11:28:15,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P052..P179,20,4316,721,4.65
+2026-11-13T11:28:24,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P075..P073,20,4379,719,8.94
+2026-11-13T11:28:31,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P102..P092,20,4411,784,6.74
+2026-11-13T11:28:36,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P059..P018,20,4301,748,5.82
+2026-11-13T11:28:42,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P108..P027,20,4394,724,5.76
+2026-11-13T11:28:52,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P148..P130,20,4494,765,9.91
+2026-11-13T11:29:02,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P113..P064,20,4450,701,9.66
+2026-11-13T11:29:10,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P136..P084,20,4452,714,8.75
+2026-11-13T11:29:18,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P165..P096,20,4385,737,7.35
+2026-11-13T11:29:50,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P131..P015,20,4366,726,32.12
 2026-11-13T11:22:13,toy-example baseline,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,178,194,2.03
 2026-11-13T11:22:14,toy-example baseline,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,178,201,1.8
 2026-11-13T11:22:15,toy-example baseline,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,178,201,0.19
@@ -49,3 +79,12 @@ timestamp,purpose,model_requested,model_returned,temperature,question_ids,n_rout
 2026-11-13T11:22:27,toy-example baseline,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,243,359,3.21
 2026-11-13T11:22:31,toy-example baseline,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,243,319,4.42
 2026-11-13T11:22:31,toy-example baseline,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,243,319,0.22
+2026-11-13T11:23:55,toy-example baseline,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,178,194,0.52
+2026-11-13T11:23:55,toy-example baseline,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,178,201,0.15
+2026-11-13T11:23:57,toy-example baseline,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,178,190,2.07
+2026-11-13T11:24:34,toy-example baseline,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,193,375,37.03
+2026-11-13T11:24:34,toy-example baseline,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,193,395,0.16
+2026-11-13T11:24:38,toy-example baseline,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,193,320,3.46
+2026-11-13T11:24:38,toy-example baseline,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,243,359,0.14
+2026-11-13T11:24:38,toy-example baseline,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,243,319,0.14
+2026-11-13T11:24:40,toy-example baseline,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,243,348,2.64
