@@ -17,3 +17,8 @@ quickstart_answers.csv
 Project_1/preds.jsonl
 Project_4/plans/baseline.csv
 Project_6/starter/predictions.csv
+
+# Project 5: extracted stage data stays local
+Project_5/stage1/
+Project_5/stage2/
+Project_5/logs/*.jsonl
