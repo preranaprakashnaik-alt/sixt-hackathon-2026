@@ -35,7 +35,7 @@ Custom orchestration, no agent framework. Files in `Project_5/pipeline/`:
 | File | Purpose |
 | --- | --- |
 | `data.py` | Loads the CSVs and builds rule-compliant base tables: eligible customers, resolved identities, valid orders, item-level net revenue and margin, order-time category, shipment lateness, ticket breaches, attribution, reconciled stock, eligible receipts, inspections, worklogs, contracts. |
-| `recipes.py` | One parameterised function per question template (about 75, including the five final-stage-only recipes), plus answer formatting. |
+| `recipes.py` | One parameterised function per question template (70, including the five final-stage-only recipes), plus answer formatting. |
 | `hard_opt.py` | Exact branch-and-bound solver for the fulfilment decision cases, with an independent SciPy/HiGHS integer-program check. |
 | `flow.py` | Event replay for the flow simulations: known-version selection, event ordering, sticky reservations, dispatch, cancellations, returns, rebates, what-if edits. |
 | `router.py` | The small-model router (catalogue prompt, validation against the data vocabulary, three votes, call logging) and a keyword parser used only as a cross-check. |
@@ -95,7 +95,7 @@ All generative models within scope have at most 40B total parameters: the pipeli
 
 Evidence locations for model sizes, settings and representative usage/run records: `MODEL_DECLARATION.csv`, `evidence/gemma_4_31b.md`, `logs/model_usage.csv`, `public_answers_report_llm.json`.
 
-The qualifying model does the language-understanding work of the workflow: for every question it selects one of about 75 calculations and extracts the parameters (country, region, period, segment, case and so on). A wrong route gives a wrong answer, so its output determines every submitted value. Stage 2 will use the same model for routing and for mapping renamed columns to our canonical schema. No fallback model is used.
+The qualifying model does the language-understanding work of the workflow: for every question it selects one of 70 calculations and extracts the parameters (country, region, period, segment, case and so on). A wrong route gives a wrong answer, so its output determines every submitted value. Stage 2 will use the same model for routing and for mapping renamed columns to our canonical schema. No fallback model is used.
 
 ## 6. Limitations and reflection
 
