@@ -11,8 +11,8 @@ Project: Project 5, Enterprise Data Agent Challenge (SIXT + TUM)
 
 Public and final answer files and SHA-256 hashes:
 
-- Stage 1 answer CSV: not generated with the current local model; hash pending.
-- Stage 2 answer CSV: not generated with the current local model; hash pending.
+- Stage 1 answer CSV
+- Stage 2 answer CSV
 
 Code revision used for the smoke tests: based on `a91518d` with uncommitted local-Qwen, Stage 2 mapping, fallback and validation changes. Record a clean commit before the final runs.
 
