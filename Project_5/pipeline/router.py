@@ -14,6 +14,7 @@ import json
 import os
 import random
 import re
+import threading
 import time
 import urllib.request
 from collections import Counter
@@ -22,6 +23,7 @@ from pathlib import Path
 from recipes import RECIPES
 
 LOG_DIR = Path(__file__).resolve().parent.parent / "logs"
+_LOG_LOCK = threading.Lock()
 
 
 # ---------------- vocabulary from the data ----------------
@@ -41,6 +43,7 @@ def vocabulary(D):
     }
 
 
+NO_MATCH = "no_matching_recipe"
 PARAM_VOCAB = {"country": "country", "region": "region", "segment": "segment", "industry": "industry",
                "category": "category", "family": "family", "carrier": "carrier", "campaign": "campaign",
                "issue_type": "issue_type", "priority": "priority", "support_channel": "support_channel",
@@ -50,6 +53,8 @@ PARAM_VOCAB = {"country": "country", "region": "region", "segment": "segment", "
 
 def validate(route, vocab):
     """Return (clean_route, error). Canonicalises values against the data vocabulary."""
+    if isinstance(route, dict) and route.get("recipe") == NO_MATCH:
+        return {"recipe": NO_MATCH, "params": {}}, None
     if not isinstance(route, dict) or route.get("recipe") not in RECIPES:
         return None, f"unknown recipe {route.get('recipe') if isinstance(route, dict) else route!r}"
     name, spec = route["recipe"], RECIPES[route["recipe"]]
@@ -93,6 +98,8 @@ def build_system_prompt(vocab):
              'Reply with JSON only: {"recipe": "<name>", "params": {...}}. Omit parameters that do not apply.',
              "Periods: quarters as Q1..Q4, months as YYYY-MM. 'customer region' values look like 'Western Europe';",
              "warehouses are single words like 'Central'. Use `country` for a country and `region` for a region, never both.",
+             f'If no recipe computes exactly what the question asks, reply with recipe "{NO_MATCH}" and empty params.',
+             "Never force a poor match: a wrong recipe gives a wrong answer.",
              "", "RECIPES:"]
     for name, spec in RECIPES.items():
         ps = ", ".join(f"{k} ({d})" for k, d in spec["params"].items()) or "no params"
@@ -131,7 +138,7 @@ class LLMRouter:
                     print("  rate limited, retrying in 5s", flush=True)
                 time.sleep(wait)
         text = out["choices"][0]["message"]["content"]
-        with self.log_path.open("a", encoding="utf-8") as f:
+        with _LOG_LOCK, self.log_path.open("a", encoding="utf-8") as f:
             f.write(json.dumps({"ts": time.strftime("%Y-%m-%dT%H:%M:%S"), "model": self.model, "returned_model": out.get("model"),
                                 "temperature": temperature, "user": messages[-1]["content"], "response": text,
                                 "usage": out.get("usage"), "seconds": round(time.time() - t0, 2)}) + "\n")

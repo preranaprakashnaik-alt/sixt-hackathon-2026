@@ -11,7 +11,8 @@ from pathlib import Path
 
 import recipes as R
 from data import Data
-from router import LLMRouter, rules_route, vocabulary
+from codegen import CodeGen
+from router import NO_MATCH, LLMRouter, rules_route, vocabulary
 
 
 def main():
@@ -33,6 +34,7 @@ def main():
     llm = LLMRouter(vocab, votes=a.votes) if a.router == "llm" else None
 
     routed = llm.route_many([(q["question_id"], q["question"]) for q in questions]) if llm else {}
+    codegen = [None]
     report, rows = [], []
     for q in questions:
         qid, text, atype = q["question_id"], q["question"], q.get("answer_type", "number")
@@ -52,8 +54,19 @@ def main():
                 entry["flags"].append(f"compute error {type(e).__name__}: {e}")
                 return None
 
-        answer, rule_answer = compute(route), compute(rule) if llm else None
-        if llm:
+        use_fallback = llm and (route.get("recipe") in (None, NO_MATCH) or route.get("error"))
+        if use_fallback:
+            # no recipe fits: the small model writes the calculation against the verified base tables
+            codegen[0] = codegen[0] or CodeGen(llm, D, stage)
+            fb = codegen[0].answer(text, atype)
+            answer, rule_answer = fb["answer"], compute(rule)
+            entry.update(fallback={k: fb.get(k) for k in ("samples", "agreement", "accepted", "errors", "code")}, rules_answer=rule_answer)
+            entry["flags"].append(f"answered by code-writing fallback (agreement {fb['agreement']:.2f})")
+            if not fb["accepted"]:
+                entry["flags"].append("fallback generations disagree: REVIEW")
+        else:
+            answer, rule_answer = compute(route), compute(rule) if llm else None
+        if llm and not use_fallback:
             entry["rules_answer"] = rule_answer
             if agreement < 1:
                 entry["flags"].append("model votes disagree")

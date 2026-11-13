@@ -9,7 +9,8 @@ LOGS = Path(__file__).resolve().parent.parent / "logs"
 
 def main():
     rows = []
-    for name, purpose in (("router_calls.jsonl", "routing"), ("toy_calls.jsonl", "toy-example baseline")):
+    for name, purpose in (("router_calls.jsonl", "routing"), ("toy_calls.jsonl", "toy-example baseline"),
+                          ("codegen_calls.jsonl", "code-writing fallback")):
         if (LOGS / name).exists():
             rows += [dict(json.loads(line), purpose=purpose) for line in (LOGS / name).open(encoding="utf-8")]
     with (LOGS / "model_usage.csv").open("w", newline="", encoding="utf-8") as f:
@@ -17,7 +18,7 @@ def main():
         w.writerow(["timestamp", "purpose", "model_requested", "model_returned", "temperature", "question_ids", "n_routes_returned",
                     "prompt_tokens", "completion_tokens", "seconds"])
         for r in rows:
-            ids = re.findall(r"^\[(\w+)\]", r["user"], re.M)
+            ids = re.findall(r"^\[(\w+)\]", r["user"], re.M) if r["purpose"] == "routing" else []
             u = r.get("usage") or {}
             w.writerow([r["ts"], r["purpose"], r["model"], r.get("returned_model"), r["temperature"],
                         f"{ids[0]}..{ids[-1]}" if ids else "", r["response"].count('"recipe"'),

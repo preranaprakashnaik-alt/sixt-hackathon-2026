@@ -70,6 +70,50 @@ timestamp,purpose,model_requested,model_returned,temperature,question_ids,n_rout
 2026-11-13T11:29:10,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P136..P084,20,4452,714,8.75
 2026-11-13T11:29:18,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P165..P096,20,4385,737,7.35
 2026-11-13T11:29:50,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P131..P015,20,4366,726,32.12
+2026-11-13T12:10:17,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,P001..P020,20,4242,795,22.63
+2026-11-13T12:10:27,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,P021..P040,20,4354,782,10.01
+2026-11-13T12:10:39,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,P041..P060,20,4290,774,11.22
+2026-11-13T12:10:48,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,P061..P080,20,4261,789,9.67
+2026-11-13T12:11:49,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,P081..P100,20,4234,771,60.59
+2026-11-13T12:11:58,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,P101..P120,20,4543,678,8.7
+2026-11-13T12:12:05,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,P121..P140,20,4453,640,7.11
+2026-11-13T12:12:11,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,P141..P160,20,4645,694,6.74
+2026-11-13T12:12:18,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,P161..P180,20,4673,708,6.65
+2026-11-13T12:12:53,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,P181..P200,20,4653,708,34.73
+2026-11-13T12:13:00,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P034..P011,20,4482,733,6.82
+2026-11-13T12:13:17,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P181..P029,20,4425,774,17.25
+2026-11-13T12:13:25,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P077..P106,20,4381,726,7.83
+2026-11-13T12:13:35,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P112..P192,20,4439,771,9.96
+2026-11-13T12:13:41,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P197..P002,20,4422,721,6.6
+2026-11-13T12:13:49,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P030..P108,20,4439,688,7.5
+2026-11-13T12:13:57,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P067..P073,20,4357,738,8.2
+2026-11-13T12:14:09,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P078..P142,20,4479,722,11.7
+2026-11-13T12:14:15,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P194..P115,20,4487,722,6.74
+2026-11-13T12:14:21,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P179..P035,20,4437,743,5.33
+2026-11-13T12:14:54,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P052..P179,20,4356,721,33.38
+2026-11-13T12:15:00,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P075..P073,20,4419,719,5.62
+2026-11-13T12:15:10,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P102..P092,20,4451,784,10.29
+2026-11-13T12:15:18,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P059..P018,20,4341,748,7.44
+2026-11-13T12:15:27,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P108..P027,20,4434,724,9.16
+2026-11-13T12:15:33,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P148..P130,20,4534,765,6.76
+2026-11-13T12:15:39,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P113..P064,20,4490,701,5.57
+2026-11-13T12:15:47,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P136..P084,20,4492,714,7.53
+2026-11-13T12:15:58,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P165..P096,20,4425,737,11.06
+2026-11-13T12:16:06,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,P131..P015,20,4406,726,8.03
+2026-11-13T12:16:33,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,N001..N004,4,3533,161,2.68
+2026-11-13T12:16:35,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,N004..N002,4,3533,161,2.25
+2026-11-13T12:16:38,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,N002..N001,4,3533,161,2.39
+2026-11-13T12:16:41,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,8989,146,2.92
+2026-11-13T12:16:44,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,8989,139,2.82
+2026-11-13T12:16:48,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9166,152,3.77
+2026-11-13T12:16:51,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,8989,136,2.73
+2026-11-13T12:16:53,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,8986,137,2.12
+2026-11-13T12:16:56,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,8986,136,3.0
+2026-11-13T12:17:05,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,8986,125,9.76
+2026-11-13T12:17:09,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,8979,262,3.28
+2026-11-13T12:17:12,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,8979,194,3.07
+2026-11-13T12:17:14,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9215,161,1.99
+2026-11-13T12:17:19,routing,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,8979,210,4.89
 2026-11-13T11:22:13,toy-example baseline,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,178,194,2.03
 2026-11-13T11:22:14,toy-example baseline,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,178,201,1.8
 2026-11-13T11:22:15,toy-example baseline,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,178,201,0.19
@@ -88,3 +132,248 @@ timestamp,purpose,model_requested,model_returned,temperature,question_ids,n_rout
 2026-11-13T11:24:38,toy-example baseline,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,243,359,0.14
 2026-11-13T11:24:38,toy-example baseline,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,243,319,0.14
 2026-11-13T11:24:40,toy-example baseline,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,243,348,2.64
+2026-11-13T12:03:39,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9012,199,20.47
+2026-11-13T12:03:40,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9000,251,21.27
+2026-11-13T12:03:41,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9013,536,22.17
+2026-11-13T12:03:41,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9011,210,22.98
+2026-11-13T12:03:42,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9289,159,2.21
+2026-11-13T12:03:42,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9007,293,23.74
+2026-11-13T12:03:43,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9012,218,4.15
+2026-11-13T12:03:45,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9011,224,3.33
+2026-11-13T12:03:45,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9000,272,3.35
+2026-11-13T12:03:45,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9268,222,2.18
+2026-11-13T12:03:46,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9338,292,3.44
+2026-11-13T12:03:47,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9013,608,6.18
+2026-11-13T12:03:48,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9273,234,3.07
+2026-11-13T12:03:48,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9310,252,2.62
+2026-11-13T12:03:48,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9012,204,2.94
+2026-11-13T12:03:49,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9009,818,30.92
+2026-11-13T12:03:51,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9254,203,2.4
+2026-11-13T12:03:52,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9000,367,3.84
+2026-11-13T12:03:52,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9011,227,4.24
+2026-11-13T12:03:56,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9027,240,4.62
+2026-11-13T12:04:00,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9009,808,10.14
+2026-11-13T12:04:00,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9027,236,3.92
+2026-11-13T12:04:01,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9016,220,8.56
+2026-11-13T12:04:02,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9008,324,11.05
+2026-11-13T12:04:03,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9027,238,2.41
+2026-11-13T12:04:03,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9016,213,2.85
+2026-11-13T12:04:06,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9370,260,4.26
+2026-11-13T12:04:09,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9025,229,6.12
+2026-11-13T12:04:11,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9008,281,4.71
+2026-11-13T12:04:11,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9267,150,7.44
+2026-11-13T12:04:14,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9007,299,28.45
+2026-11-13T12:04:15,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9327,225,3.93
+2026-11-13T12:04:21,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9016,191,9.74
+2026-11-13T12:04:21,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9007,286,7.2
+2026-11-13T12:04:21,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9009,554,21.51
+2026-11-13T12:04:25,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9025,229,16.22
+2026-11-13T12:04:27,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9006,686,6.69
+2026-11-13T12:04:42,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9002,267,20.54
+2026-11-13T12:04:42,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9006,514,14.63
+2026-11-13T12:04:44,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,8995,325,22.98
+2026-11-13T12:04:45,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9002,221,2.76
+2026-11-13T12:04:46,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9013,526,58.77
+2026-11-13T12:04:48,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9002,270,3.05
+2026-11-13T12:04:49,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9003,180,3.21
+2026-11-13T12:04:49,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,8995,324,4.92
+2026-11-13T12:04:51,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9011,221,3.3
+2026-11-13T12:04:51,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9003,186,2.47
+2026-11-13T12:04:51,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9006,602,8.61
+2026-11-13T12:04:52,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9025,247,26.73
+2026-11-13T12:04:55,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9011,231,3.95
+2026-11-13T12:04:55,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9008,262,40.75
+2026-11-13T12:04:56,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,8995,381,6.92
+2026-11-13T12:04:57,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9011,213,1.81
+2026-11-13T12:04:59,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9004,336,7.38
+2026-11-13T12:05:01,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,8983,312,5.02
+2026-11-13T12:05:01,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,8999,429,6.13
+2026-11-13T12:05:05,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9378,343,6.21
+2026-11-13T12:05:05,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,8983,545,8.74
+2026-11-13T12:05:10,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9004,359,5.06
+2026-11-13T12:05:17,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,8983,351,11.1
+2026-11-13T12:05:19,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9004,348,8.14
+2026-11-13T12:05:23,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,8983,364,6.15
+2026-11-13T12:05:23,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,8983,298,21.47
+2026-11-13T12:05:23,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,8996,354,4.6
+2026-11-13T12:05:32,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9466,353,30.24
+2026-11-13T12:05:35,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9002,352,12.08
+2026-11-13T12:05:39,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,8996,397,15.66
+2026-11-13T12:05:39,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,8983,356,16.57
+2026-11-13T12:05:41,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,8999,438,9.08
+2026-11-13T12:05:41,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9392,346,6.32
+2026-11-13T12:05:43,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9003,181,51.72
+2026-11-13T12:05:43,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9377,256,3.93
+2026-11-13T12:05:44,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,8996,325,5.49
+2026-11-13T12:05:45,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9475,353,4.08
+2026-11-13T12:05:46,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9222,197,2.68
+2026-11-13T12:05:47,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9013,506,55.03
+2026-11-13T12:05:47,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9002,330,5.86
+2026-11-13T12:05:48,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,8990,322,5.14
+2026-11-13T12:05:49,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,8999,400,4.3
+2026-11-13T12:05:50,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9021,407,4.82
+2026-11-13T12:05:51,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9008,268,6.24
+2026-11-13T12:05:51,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9002,321,3.7
+2026-11-13T12:05:53,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,8990,277,4.17
+2026-11-13T12:05:55,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9361,313,3.88
+2026-11-13T12:05:56,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9013,634,8.86
+2026-11-13T12:05:56,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9466,463,5.34
+2026-11-13T12:05:56,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9437,392,6.64
+2026-11-13T12:05:57,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9008,394,6.81
+2026-11-13T12:05:58,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,8990,367,5.11
+2026-11-13T12:06:00,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9013,447,3.91
+2026-11-13T12:06:00,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9008,233,2.59
+2026-11-13T12:06:00,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9021,325,4.46
+2026-11-13T12:06:04,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,8998,344,9.79
+2026-11-13T12:06:05,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9384,354,4.82
+2026-11-13T12:06:05,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9280,245,5.52
+2026-11-13T12:06:07,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9009,786,9.63
+2026-11-13T12:06:08,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9005,331,8.67
+2026-11-13T12:06:10,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9008,635,14.27
+2026-11-13T12:06:38,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9005,271,29.52
+2026-11-13T12:06:41,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,8998,370,36.87
+2026-11-13T12:06:42,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9005,342,3.75
+2026-11-13T12:06:43,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9021,371,37.51
+2026-11-13T12:06:44,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9002,443,38.83
+2026-11-13T12:06:45,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9008,588,34.49
+2026-11-13T12:06:45,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9828,614,37.57
+2026-11-13T12:06:46,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,8998,369,4.95
+2026-11-13T12:06:48,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9019,414,6.51
+2026-11-13T12:06:49,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9430,416,6.36
+2026-11-13T12:06:49,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9002,398,4.7
+2026-11-13T12:06:51,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9634,552,6.29
+2026-11-13T12:06:53,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9005,438,6.57
+2026-11-13T12:06:53,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,8996,218,4.23
+2026-11-13T12:06:58,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9008,682,6.68
+2026-11-13T12:06:59,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9002,390,9.72
+2026-11-13T12:06:59,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9019,545,11.08
+2026-11-13T12:07:00,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,8996,270,6.31
+2026-11-13T12:07:01,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9005,435,8.09
+2026-11-13T12:07:02,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,8985,229,2.97
+2026-11-13T12:07:04,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,8996,231,4.15
+2026-11-13T12:07:04,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9602,393,4.93
+2026-11-13T12:07:07,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,8995,728,8.86
+2026-11-13T12:07:07,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,8985,220,5.3
+2026-11-13T12:07:08,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9000,217,4.09
+2026-11-13T12:07:08,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9019,511,4.12
+2026-11-13T12:07:09,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9005,486,7.34
+2026-11-13T12:07:10,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,8985,213,3.23
+2026-11-13T12:07:11,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9255,236,3.05
+2026-11-13T12:07:12,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,8986,89,1.42
+2026-11-13T12:07:12,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,8992,178,2.73
+2026-11-13T12:07:14,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,8992,183,2.15
+2026-11-13T12:07:14,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,8986,136,2.34
+2026-11-13T12:07:15,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,8995,593,8.39
+2026-11-13T12:07:15,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,8999,490,6.77
+2026-11-13T12:07:15,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9000,258,4.3
+2026-11-13T12:07:16,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,8986,96,2.15
+2026-11-13T12:07:18,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9009,623,33.31
+2026-11-13T12:07:19,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9296,170,3.55
+2026-11-13T12:07:19,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,8992,256,4.82
+2026-11-13T12:07:19,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9029,278,3.16
+2026-11-13T12:07:21,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9527,386,6.46
+2026-11-13T12:07:23,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9286,252,3.88
+2026-11-13T12:07:23,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,8995,589,7.87
+2026-11-13T12:07:23,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9000,241,4.08
+2026-11-13T12:07:25,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9345,269,5.31
+2026-11-13T12:07:27,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9007,293,4.13
+2026-11-13T12:07:27,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9014,157,4.44
+2026-11-13T12:07:29,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9670,732,10.99
+2026-11-13T12:07:29,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9279,197,6.66
+2026-11-13T12:07:30,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,8999,425,8.08
+2026-11-13T12:07:31,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9029,270,6.06
+2026-11-13T12:07:31,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9338,292,3.97
+2026-11-13T12:07:33,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9210,214,5.85
+2026-11-13T12:07:33,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,8995,246,3.59
+2026-11-13T12:07:36,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9007,292,4.72
+2026-11-13T12:07:36,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9014,179,3.32
+2026-11-13T12:07:37,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9029,287,6.23
+2026-11-13T12:07:38,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9009,608,7.98
+2026-11-13T12:07:38,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,8995,281,4.52
+2026-11-13T12:07:38,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9462,432,8.3
+2026-11-13T12:07:40,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9231,200,3.2
+2026-11-13T12:07:40,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9007,312,4.67
+2026-11-13T12:07:41,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,8990,204,3.0
+2026-11-13T12:07:41,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,8999,448,4.39
+2026-11-13T12:07:42,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,8995,244,4.36
+2026-11-13T12:07:42,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9014,205,2.69
+2026-11-13T12:07:43,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,8990,238,2.66
+2026-11-13T12:07:43,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,8996,173,3.12
+2026-11-13T12:07:44,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9252,177,1.86
+2026-11-13T12:07:45,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9012,248,3.0
+2026-11-13T12:07:45,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,8999,460,7.5
+2026-11-13T12:07:47,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,8990,211,3.55
+2026-11-13T12:07:47,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9298,139,2.34
+2026-11-13T12:07:48,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,8999,482,6.83
+2026-11-13T12:07:50,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9009,301,5.96
+2026-11-13T12:07:50,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9497,411,4.94
+2026-11-13T12:07:51,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9012,299,3.34
+2026-11-13T12:07:51,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,8996,189,7.53
+2026-11-13T12:07:53,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9348,290,3.14
+2026-11-13T12:07:53,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,8996,142,2.51
+2026-11-13T12:07:55,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,8999,493,6.42
+2026-11-13T12:07:55,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9006,166,5.15
+2026-11-13T12:07:56,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9023,583,8.72
+2026-11-13T12:07:57,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9012,260,6.07
+2026-11-13T12:07:57,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9027,265,3.94
+2026-11-13T12:07:58,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9012,203,2.96
+2026-11-13T12:08:00,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9006,153,4.1
+2026-11-13T12:08:00,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9310,176,3.0
+2026-11-13T12:08:01,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9012,205,3.35
+2026-11-13T12:08:01,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9009,314,8.08
+2026-11-13T12:08:02,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9330,279,4.77
+2026-11-13T12:08:03,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9006,158,3.3
+2026-11-13T12:08:03,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9023,530,7.81
+2026-11-13T12:08:04,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9012,199,2.62
+2026-11-13T12:08:05,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9361,281,3.41
+2026-11-13T12:08:06,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9009,351,5.9
+2026-11-13T12:08:06,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9018,201,3.12
+2026-11-13T12:08:06,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9027,243,4.36
+2026-11-13T12:08:08,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9249,202,3.89
+2026-11-13T12:08:10,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9018,196,3.84
+2026-11-13T12:08:10,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9009,359,5.29
+2026-11-13T12:08:10,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9308,242,3.74
+2026-11-13T12:08:11,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9009,343,5.42
+2026-11-13T12:08:17,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9591,528,13.31
+2026-11-13T12:08:40,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9027,210,29.91
+2026-11-13T12:08:41,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9002,126,31.21
+2026-11-13T12:08:41,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9018,226,31.51
+2026-11-13T12:08:43,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9014,205,35.07
+2026-11-13T12:08:43,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9166,123,1.47
+2026-11-13T12:08:43,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9275,210,3.05
+2026-11-13T12:08:46,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9009,377,34.6
+2026-11-13T12:08:46,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9002,168,2.99
+2026-11-13T12:08:46,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9008,276,4.75
+2026-11-13T12:08:47,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9027,223,4.23
+2026-11-13T12:08:47,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9014,198,4.84
+2026-11-13T12:08:48,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9208,145,1.89
+2026-11-13T12:08:48,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9023,683,30.95
+2026-11-13T12:08:49,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9424,293,3.68
+2026-11-13T12:08:50,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9250,186,2.22
+2026-11-13T12:08:50,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9002,174,2.68
+2026-11-13T12:08:50,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9008,279,4.39
+2026-11-13T12:08:51,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9288,208,3.97
+2026-11-13T12:08:52,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9027,217,2.86
+2026-11-13T12:08:54,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9014,200,4.71
+2026-11-13T12:08:55,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9027,222,3.22
+2026-11-13T12:08:55,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9008,381,4.69
+2026-11-13T12:08:56,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9027,207,3.43
+2026-11-13T12:08:58,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9027,193,3.2
+2026-11-13T12:08:58,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9740,881,10.36
+2026-11-13T12:08:59,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9252,195,4.64
+2026-11-13T12:09:00,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9027,186,4.04
+2026-11-13T12:09:02,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9427,258,6.32
+2026-11-13T12:09:37,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9014,157,0.23
+2026-11-13T12:09:37,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9009,786,0.28
+2026-11-13T12:09:37,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9023,583,0.33
+2026-11-13T12:09:37,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.0,,0,9210,214,0.22
+2026-11-13T12:09:37,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9023,530,0.2
+2026-11-13T12:09:37,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9014,179,0.19
+2026-11-13T12:09:37,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9591,528,0.21
+2026-11-13T12:09:38,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9231,200,0.18
+2026-11-13T12:09:38,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9009,623,0.17
+2026-11-13T12:09:38,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9023,683,0.22
+2026-11-13T12:09:38,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9014,205,0.2
+2026-11-13T12:09:38,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.4,,0,9670,732,0.22
+2026-11-13T12:09:38,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9740,881,0.19
+2026-11-13T12:09:38,code-writing fallback,bedrock_mantle/google.gemma-4-31b,bedrock_mantle/google.gemma-4-31b,0.7,,0,9009,608,0.17

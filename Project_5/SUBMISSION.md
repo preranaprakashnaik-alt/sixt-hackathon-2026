@@ -15,7 +15,7 @@ Code revision used for your calculations: `fca553c`
 
 ## 1. Approach in one paragraph
 
-A small open-weight model (Gemma 4 31B, 30.7B parameters) reads each business question and decides which calculation it asks for and with which parameters; it returns a short JSON "route" such as `{"recipe": "net_revenue", "params": {"country": "Germany", "period": "Q4"}}`. Ordinary Python code then computes the answer from the CSV tables. The model never sees data rows and never does arithmetic. The business rules (valid orders, identity resolution, exchange rates, discount and refund allocation, service-level breaches, stock reconciliation) are implemented once in a verified data layer, and each question template is a small function on top of it. The 30 optimization questions are solved by an exact solver and the 20 flow questions by an event simulator. People intervene only where the checks raise a flag; in Stage 1 no question was flagged.
+A small open-weight model (Gemma 4 31B, 30.7B parameters) reads each business question and decides which calculation it asks for and with which parameters; it returns a short JSON "route" such as `{"recipe": "net_revenue", "params": {"country": "Germany", "period": "Q4"}}`. Ordinary Python code then computes the answer from the CSV tables. The model never sees data rows and never does arithmetic. The business rules (valid orders, identity resolution, exchange rates, discount and refund allocation, service-level breaches, stock reconciliation) are implemented once in a verified data layer, and each question template is a small function on top of it. The 30 optimization questions are solved by an exact solver and the 20 flow questions by an event simulator. If the model judges that no recipe fits a question, it writes the calculation itself as a short pandas function against the same verified tables; that code is run several times independently and accepted only when the results agree. People intervene only where the checks raise a flag; in Stage 1 no question was flagged and no question needed the fallback.
 
 ## 2. Architecture and implementation
 
@@ -39,6 +39,8 @@ Custom orchestration, no agent framework. Files in `Project_5/pipeline/`:
 | `hard_opt.py` | Exact branch-and-bound solver for the fulfilment decision cases, with an independent SciPy/HiGHS integer-program check. |
 | `flow.py` | Event replay for the flow simulations: known-version selection, event ordering, sticky reservations, dispatch, cancellations, returns, rebates, what-if edits. |
 | `router.py` | The small-model router (catalogue prompt, validation against the data vocabulary, three votes, call logging) and a keyword parser used only as a cross-check. |
+| `codegen.py` | Fallback for questions with no matching recipe: the model writes `solve(D)` against the verified tables, using the stage's own business rules; restricted execution; three generations, accepted when at least two agree. |
+| `fallback_eval.py` | Measures the fallback by hiding the recipes (see section 3). |
 | `run.py` | End-to-end run; writes the answer CSV and a per-question report with flags. |
 | `test_examples.py` | Regression test on the ten organizer-solved practice examples. |
 | `usage_summary.py` | Writes the redacted model-usage record. |
@@ -72,6 +74,9 @@ Our own checks (there has been no official feedback on scored answers):
 - **Model-only baseline.** Given the raw tables of the three public toy examples and asked to reason and calculate by itself, Gemma 4 31B answered all three correctly at three different temperature settings (`pipeline/toy_examples.py`). The question wording included the rule hints from the published explanations. These are tiny tables; the result does not show that the model could do the same on the full dataset.
 - **CSV structure.** The organizers' `check_submission.py` reports 200 rows and 200 non-blank answers.
 
+- **Fallback measured with the recipes hidden.** For the ten organizer-solved examples and the first question of each of the 49 recipes used in questions 1-150 (59 questions), the model wrote the calculation itself, three generations each. Its majority answer matched the reference on 58 of 59, including 10 of 10 organizer answers. The agreement check accepted 57, all correct, and flagged 2 for review (one of them correct). On the first run 3 questions failed because our execution sandbox blocked harmless built-ins; after fixing the sandbox we re-ran only those 3. For 49 of the 59 the reference is our own recipe answer, so this shows that two implementations agree, not that both are right. The test is also easier than a truly new question type: the verified tables already contain the hard parts (validity, allocation, lateness, at-risk flags).
+- **New questions end to end.** Three questions we invented that have no recipe (average shipping cost for a carrier, ticket count by channel and region, top marketing channel by spend) were sent to the fallback by the router and answered correctly; a control question with a recipe was routed to it.
+
 Representative errors found and fixed: the keyword parser first read "All families" from the explanatory sentence of every price-variance question, giving the same answer for three different product families; the fix was to read the family named at the start of the question.
 
 Limits of this evidence: accuracy on the 200 scored questions is not measured, because the key is private. Only about 10 of roughly 90 question templates have a published answer to compare against. The flow simulation answers have no independent check; they rest on our reading of the rules.
@@ -87,6 +92,8 @@ See `MODEL_DECLARATION.csv`, `evidence/gemma_4_31b.md` and `logs/model_usage.csv
 
 The coding assistant was used with the organizer's approval given on the day. It does not run inside the pipeline and did not produce answers directly. Both models are listed in `MODEL_DECLARATION.csv`.
 
+All model calls of the day, including experiments, are in `logs/model_usage.csv`: about 2.6 million prompt tokens in total, most of them from the fallback evaluation (each code-writing call carries the table descriptions and business rules, about 9,000 tokens).
+
 Measured for the final three-vote Stage 1 run: 30 model calls of 20 questions each, about 132,000 prompt tokens and 22,000 completion tokens, about 310 seconds of model time (from the gateway's usage fields and wall-clock time per call, recorded in `logs/model_usage.csv`). Cost: not measured. The deterministic calculation of all 200 answers takes about two minutes on a laptop CPU; memory: not measured.
 
 ## 5. Small-model bonus declaration
@@ -97,16 +104,16 @@ All generative models within scope have at most 40B total parameters: the pipeli
 
 Evidence locations for model sizes, settings and representative usage/run records: `MODEL_DECLARATION.csv`, `evidence/gemma_4_31b.md`, `logs/model_usage.csv`, `public_answers_report_llm.json`.
 
-The qualifying model does the language-understanding work of the workflow: for every question it selects one of 70 calculations and extracts the parameters (country, region, period, segment, case and so on). A wrong route gives a wrong answer, so its output determines every submitted value. Stage 2 will use the same model for routing and for mapping renamed columns to our canonical schema. No fallback model is used.
+The qualifying model does the language-understanding work of the workflow: for every question it selects one of 70 calculations and extracts the parameters (country, region, period, segment, case and so on). A wrong route gives a wrong answer, so its output determines every submitted value. It is also the model that writes the calculation code in the fallback path. Stage 2 will use the same model for routing, for the fallback and for mapping renamed columns to our canonical schema. No other fallback model is used.
 
 ## 6. Limitations and reflection
 
-- The recipe library covers the question templates we have seen plus the documented final-stage recipes. A genuinely new template in Stage 2 would need a new recipe.
+- The recipe library covers the question templates we have seen plus the documented final-stage recipes. A new template in Stage 2 goes to the code-writing fallback, which is less reliable than a tested recipe and has only been measured on questions whose hard parts the data layer already solves. A new kind of optimization or simulation task would still need hand-written code.
 - Some rules needed interpretation, for example which customer record defines geography for "customers in Italy who opened a ticket". Both readings gave the same answer here, but that is not guaranteed in Stage 2.
 - The flow simulator is unverified against any reference.
 - Agreement between the model and the keyword parser shows stable routing, not correct calculations.
 - Design trade-off: we chose reliability and low cost over generality. The model's task is small enough for a 31B model, and each question costs under 1,000 tokens, but new question types need engineering work.
-- With more time: a second, independently written implementation of the hardest metrics, and model-written SQL as a fallback for unseen templates.
+- With more time: a second, independently written implementation of the hardest metrics, and a fallback evaluation on question types that need new base tables.
 
 ## 7. References and attribution
 

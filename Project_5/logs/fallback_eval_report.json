@@ -1,0 +1,1136 @@
+{
+ "summary": {
+  "questions": 59,
+  "samples_per_question": 3,
+  "correct_majority_answer": 58,
+  "accepted_by_agreement_check": 57,
+  "accepted_and_correct": 57,
+  "accepted_but_wrong": 0,
+  "flagged_for_review": 2,
+  "flagged_but_correct": 1,
+  "organizer_solved_examples_correct": "10/10"
+ },
+ "results": [
+  {
+   "question_id": "E001",
+   "reference_source": "organizer answer",
+   "reference": "333368.46",
+   "correct": true,
+   "answer": "333368.46",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "333368.46",
+    "333368.46",
+    "333368.46"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "E002",
+   "reference_source": "organizer answer",
+   "reference": "11",
+   "correct": true,
+   "answer": "11",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "11",
+    "11",
+    "11"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "E003",
+   "reference_source": "organizer answer",
+   "reference": "0.82",
+   "correct": true,
+   "answer": "0.82",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "0.82",
+    "0.82",
+    "0.82"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "E004",
+   "reference_source": "organizer answer",
+   "reference": "32.59",
+   "correct": true,
+   "answer": "32.59",
+   "agreement": 0.6666666666666666,
+   "accepted": true,
+   "samples": [
+    "32.59",
+    "32.59",
+    "31.85"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "E005",
+   "reference_source": "organizer answer",
+   "reference": "Laptop;Phone;Tablet",
+   "correct": true,
+   "answer": "Laptop;Phone;Tablet",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "Laptop;Phone;Tablet",
+    "Laptop;Phone;Tablet",
+    "Laptop;Phone;Tablet"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "E006",
+   "reference_source": "organizer answer",
+   "reference": "1037509.54",
+   "correct": true,
+   "answer": "1037509.54",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "1037509.54",
+    "1037509.54",
+    "1037509.54"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "E007",
+   "reference_source": "organizer answer",
+   "reference": "8453",
+   "correct": true,
+   "answer": "8453",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "8453",
+    "8453",
+    "8453"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "E008",
+   "reference_source": "organizer answer",
+   "reference": "1178.44",
+   "correct": true,
+   "answer": "1178.44",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "1178.44",
+    "1178.44",
+    "1178.44"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "E009",
+   "reference_source": "organizer answer",
+   "reference": "16826.49",
+   "correct": true,
+   "answer": "16826.49",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "16826.49",
+    "16826.49",
+    "16826.49"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "E010",
+   "reference_source": "organizer answer",
+   "reference": "54.08",
+   "correct": true,
+   "answer": "54.08",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "54.08",
+    "54.08",
+    "54.08"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P001",
+   "reference_source": "recipe tickets_after_late_delivery_breach_pct",
+   "reference": "63.16",
+   "correct": true,
+   "answer": "63.16",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "63.16",
+    "63.16",
+    "63.16"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P002",
+   "reference_source": "recipe carrier_weighted_delay",
+   "reference": "22.57",
+   "correct": true,
+   "answer": "22.57",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "22.57",
+    "22.57",
+    "22.57"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P003",
+   "reference_source": "recipe top_delay_carrier",
+   "reference": "UPS",
+   "correct": true,
+   "answer": "UPS",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "UPS",
+    "UPS",
+    "UPS"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P004",
+   "reference_source": "recipe margin_rate_pct",
+   "reference": "40.05",
+   "correct": true,
+   "answer": "40.05",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "40.05",
+    "40.05",
+    "40.05"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P005",
+   "reference_source": "recipe net_revenue",
+   "reference": "198233.11",
+   "correct": true,
+   "answer": "198233.11",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "198233.11",
+    "198233.11",
+    "198233.11"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P006",
+   "reference_source": "recipe refund_rate_pct",
+   "reference": "2.98",
+   "correct": true,
+   "answer": "2.98",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "2.98",
+    "2.98",
+    "2.98"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P007",
+   "reference_source": "recipe revenue_growth_pct",
+   "reference": "-21.45",
+   "correct": true,
+   "answer": "-21.45",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "-21.45",
+    "-21.45",
+    "-21.45"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P008",
+   "reference_source": "recipe revenue_growth_at_least",
+   "reference": "true",
+   "correct": true,
+   "answer": "true",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "true",
+    "true",
+    "true"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P009",
+   "reference_source": "recipe top_manager_at_risk",
+   "reference": "Noah",
+   "correct": true,
+   "answer": "Noah",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "Noah",
+    "Noah",
+    "Noah"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P010",
+   "reference_source": "recipe top_email_domain",
+   "reference": "gmail.com",
+   "correct": true,
+   "answer": "gmail.com",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "gmail.com",
+    "gmail.com",
+    "gmail.com"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P012",
+   "reference_source": "recipe top_margin_category",
+   "reference": "Accessory",
+   "correct": true,
+   "answer": "Accessory",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "Accessory",
+    "Accessory",
+    "Accessory"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P015",
+   "reference_source": "recipe revenue_vs_target_pct",
+   "reference": "70.86",
+   "correct": true,
+   "answer": "70.86",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "70.86",
+    "70.86",
+    "70.86"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P016",
+   "reference_source": "recipe accounts_late_and_breach",
+   "reference": "21",
+   "correct": true,
+   "answer": "21",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "21",
+    "21",
+    "21"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P021",
+   "reference_source": "recipe account_ltv_p90",
+   "reference": "86280.28",
+   "correct": true,
+   "answer": "86280.28",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "86280.28",
+    "86280.28",
+    "86280.28"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P022",
+   "reference_source": "recipe revenue_zscore",
+   "reference": "1.37",
+   "correct": true,
+   "answer": "1.37",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "1.37",
+    "1.37",
+    "1.37"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P024",
+   "reference_source": "recipe top_issue_high_value_accounts",
+   "reference": "delivery",
+   "correct": true,
+   "answer": "delivery",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "delivery",
+    "delivery",
+    "delivery"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P027",
+   "reference_source": "recipe region_highest_zscore",
+   "reference": "Central Europe",
+   "correct": true,
+   "answer": "Central Europe",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "Central Europe",
+    "Central Europe",
+    "Central Europe"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P028",
+   "reference_source": "recipe cohort_retention_pct",
+   "reference": "45.03",
+   "correct": true,
+   "answer": "45.03",
+   "agreement": 0.6666666666666666,
+   "accepted": true,
+   "samples": [
+    null,
+    "45.03",
+    "45.03"
+   ],
+   "errors": [
+    "KeyError: '__import__'",
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P030",
+   "reference_source": "recipe top_category_by_segment",
+   "reference": "Laptop",
+   "correct": true,
+   "answer": "Laptop",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "Laptop",
+    "Laptop",
+    "Laptop"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P032",
+   "reference_source": "recipe top_account_category_share",
+   "reference": "5.47",
+   "correct": true,
+   "answer": "5.47",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "5.47",
+    "5.47",
+    "5.47"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P033",
+   "reference_source": "recipe discount_refund_correlation",
+   "reference": "0.18",
+   "correct": true,
+   "answer": "0.18",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "0.18",
+    "0.18",
+    "0.18"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P035",
+   "reference_source": "recipe web_conversion_pct",
+   "reference": "11.01",
+   "correct": true,
+   "answer": "11.01",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "11.01",
+    "11.01",
+    "11.01"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P036",
+   "reference_source": "recipe top_attributed_campaign",
+   "reference": "PartnerBoost",
+   "correct": true,
+   "answer": "PartnerBoost",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "PartnerBoost",
+    "PartnerBoost",
+    "PartnerBoost"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P037",
+   "reference_source": "recipe top_refund_rate_category",
+   "reference": "Phone",
+   "correct": true,
+   "answer": "Phone",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "Phone",
+    "Phone",
+    "Phone"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P041",
+   "reference_source": "recipe revenue_meets_target",
+   "reference": "false",
+   "correct": true,
+   "answer": "false",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "false",
+    "false",
+    "false"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P043",
+   "reference_source": "recipe at_risk_customers",
+   "reference": "15",
+   "correct": true,
+   "answer": "15",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "15",
+    "15",
+    "15"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P045",
+   "reference_source": "recipe top_category_before_first_ticket",
+   "reference": "Laptop",
+   "correct": true,
+   "answer": "Laptop",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "Laptop",
+    "Laptop",
+    "Laptop"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P049",
+   "reference_source": "recipe median_order_revenue_segment",
+   "reference": "3242.30",
+   "correct": true,
+   "answer": "3242.30",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "3242.30",
+    "3242.30",
+    "3242.30"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P052",
+   "reference_source": "recipe unique_customers",
+   "reference": "100",
+   "correct": true,
+   "answer": "100",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "100",
+    "100",
+    "100"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P053",
+   "reference_source": "recipe revenue_touch_and_ticket",
+   "reference": "750531.87",
+   "correct": true,
+   "answer": "750531.87",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "750531.87",
+    "750531.87",
+    "750531.87"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P056",
+   "reference_source": "recipe top3_categories",
+   "reference": "Laptop;Phone;Tablet",
+   "correct": true,
+   "answer": "Laptop;Phone;Tablet",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "Laptop;Phone;Tablet",
+    "Laptop;Phone;Tablet",
+    "Laptop;Phone;Tablet"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P059",
+   "reference_source": "recipe earliest_order_by_channel",
+   "reference": "2024-01-01",
+   "correct": false,
+   "answer": null,
+   "agreement": 0.0,
+   "accepted": false,
+   "samples": [
+    null,
+    null,
+    null
+   ],
+   "errors": [
+    "NameError: name 'hasattr' is not defined",
+    "NameError: name 'hasattr' is not defined",
+    "KeyError: '__import__'"
+   ]
+  },
+  {
+   "question_id": "P071",
+   "reference_source": "recipe top_product_name",
+   "reference": "Orion Workstation",
+   "correct": true,
+   "answer": "Orion Workstation",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "Orion Workstation",
+    "Orion Workstation",
+    "Orion Workstation"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P079",
+   "reference_source": "recipe trial_conversion_pct",
+   "reference": "3.64",
+   "correct": true,
+   "answer": "3.64",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "3.64",
+    "3.64",
+    "3.64"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P083",
+   "reference_source": "recipe sla_breach_pct",
+   "reference": "48.95",
+   "correct": true,
+   "answer": "48.95",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "48.95",
+    "48.95",
+    "48.95"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P100",
+   "reference_source": "recipe active_customers",
+   "reference": "200",
+   "correct": true,
+   "answer": "200",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "200",
+    "200",
+    "200"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P101",
+   "reference_source": "recipe procurement_commitment",
+   "reference": "1701398.41",
+   "correct": true,
+   "answer": "1701398.41",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "1701398.41",
+    "1701398.41",
+    "1701398.41"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P105",
+   "reference_source": "recipe procurement_open_units",
+   "reference": "1502",
+   "correct": true,
+   "answer": "1502",
+   "agreement": 0.6666666666666666,
+   "accepted": true,
+   "samples": [
+    "1502",
+    "1502",
+    "5662"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P109",
+   "reference_source": "recipe procurement_on_time_pct",
+   "reference": "47.20",
+   "correct": true,
+   "answer": "47.20",
+   "agreement": 0.3333333333333333,
+   "accepted": false,
+   "samples": [
+    "47.20",
+    null,
+    null
+   ],
+   "errors": [
+    null,
+    "KeyError: 'promised_ts'",
+    "KeyError: 'promised_ts'"
+   ]
+  },
+  {
+   "question_id": "P113",
+   "reference_source": "recipe procurement_rejection_pct",
+   "reference": "8.35",
+   "correct": true,
+   "answer": "8.35",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "8.35",
+    "8.35",
+    "8.35"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P117",
+   "reference_source": "recipe procurement_price_variance",
+   "reference": "418274.38",
+   "correct": true,
+   "answer": "418274.38",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "418274.38",
+    "418274.38",
+    "418274.38"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P121",
+   "reference_source": "recipe procurement_received_cost",
+   "reference": "1171344.66",
+   "correct": true,
+   "answer": "1171344.66",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "1171344.66",
+    "1171344.66",
+    "1171344.66"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P125",
+   "reference_source": "recipe procurement_worst_supplier",
+   "reference": "Germany Supply 1",
+   "correct": true,
+   "answer": "Germany Supply 1",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "Germany Supply 1",
+    "Germany Supply 1",
+    "Germany Supply 1"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P129",
+   "reference_source": "recipe inventory_on_hand",
+   "reference": "11483",
+   "correct": true,
+   "answer": "11483",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "11483",
+    "11483",
+    "11483"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P133",
+   "reference_source": "recipe inventory_value",
+   "reference": "2860495.11",
+   "correct": true,
+   "answer": "2860495.11",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "2860495.11",
+    "2860495.11",
+    "2860495.11"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P137",
+   "reference_source": "recipe inventory_below_reorder",
+   "reference": "19",
+   "correct": true,
+   "answer": "19",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "19",
+    "19",
+    "19"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P141",
+   "reference_source": "recipe inventory_reorder_units",
+   "reference": "4862",
+   "correct": true,
+   "answer": "4862",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "4862",
+    "4862",
+    "4862"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P145",
+   "reference_source": "recipe returns_restockable_pct",
+   "reference": "47.22",
+   "correct": true,
+   "answer": "47.22",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "47.22",
+    "47.22",
+    "47.22"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P149",
+   "reference_source": "recipe returns_recovered_value",
+   "reference": "11939.08",
+   "correct": true,
+   "answer": "11939.08",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "11939.08",
+    "11939.08",
+    "11939.08"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  }
+ ]
+}

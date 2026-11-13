@@ -1,0 +1,72 @@
+{
+ "summary": {
+  "questions": 3,
+  "samples_per_question": 3,
+  "correct_majority_answer": 3,
+  "accepted_by_agreement_check": 2,
+  "accepted_and_correct": 2,
+  "accepted_but_wrong": 0,
+  "flagged_for_review": 1,
+  "flagged_but_correct": 1,
+  "organizer_solved_examples_correct": "0/0"
+ },
+ "results": [
+  {
+   "question_id": "P028",
+   "reference_source": "recipe cohort_retention_pct",
+   "reference": "45.03",
+   "correct": true,
+   "answer": "45.03",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "45.03",
+    "45.03",
+    "45.03"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P059",
+   "reference_source": "recipe earliest_order_by_channel",
+   "reference": "2024-01-01",
+   "correct": true,
+   "answer": "2024-01-01",
+   "agreement": 1.0,
+   "accepted": true,
+   "samples": [
+    "2024-01-01",
+    "2024-01-01",
+    "2024-01-01"
+   ],
+   "errors": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "question_id": "P109",
+   "reference_source": "recipe procurement_on_time_pct",
+   "reference": "47.20",
+   "correct": true,
+   "answer": "47.20",
+   "agreement": 0.3333333333333333,
+   "accepted": false,
+   "samples": [
+    "47.20",
+    null,
+    null
+   ],
+   "errors": [
+    null,
+    "KeyError: 'promised_ts'",
+    "KeyError: 'promised_ts'"
+   ]
+  }
+ ]
+}

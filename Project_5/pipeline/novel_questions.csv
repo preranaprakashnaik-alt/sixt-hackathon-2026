@@ -1,0 +1,5 @@
+question_id,question,answer_type,difficulty
+N001,"What was the average shipping cost in EUR per eligible shipment handled by DHL? Return a number rounded to two decimals.",number,novel
+N002,"How many eligible support tickets were opened through the chat support channel by customers in the Western Europe region?",integer,novel
+N003,"Which marketing channel had the highest total eligible touch spend in EUR?",string,novel
+N004,"For warehouse North, how many units remain outstanding across eligible purchase lines? For each line subtract all eligible accepted receipt units from ordered units, floor the remainder at zero, then sum.",integer,control
