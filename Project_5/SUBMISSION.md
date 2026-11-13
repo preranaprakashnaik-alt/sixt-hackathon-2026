@@ -1,8 +1,8 @@
 # Project 5 method report
 
-Team name: TODO
+Team name: Two Braincells
 
-Team members and contributions: TODO
+Team members and contributions: Prerana Prakash Naik, Harisankar Karamchand (contributions: TODO)
 
 Project: Project 5, Enterprise Data Agent Challenge (SIXT + TUM)
 
