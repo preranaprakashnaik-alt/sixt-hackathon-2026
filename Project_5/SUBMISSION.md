@@ -11,7 +11,7 @@ Public and final submission filenames and SHA-256 hashes:
 - `Project_5/public_answers.csv`: `13bce1c97d87da7b15bb562433fee8841914cdb583ac8eb80b43304b4272628e`
 - `Project_5/final_answers.csv`: pending (Stage 2 not yet released)
 
-Code revision used for your calculations: `fca553c`
+Code revision used for your calculations: `0a3a606`
 
 ## 1. Approach in one paragraph
 
