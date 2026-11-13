@@ -8,7 +8,7 @@ This report follows the event's `SUBMISSION_TEMPLATE.md`. The additional items t
 
 **Team members and contributions:**
 
-- Prerana Prakash Naik: owner of the team repository and of the submission.
+- Prerana Prakash Naik: owner of the team repository and of the submission. Explored a dynamic approach without a specific recipe for each Stage 1 question, and ran the trial with the smaller Qwen2.5-Coder 3B model to compare it with Gemma 4 31B.
 - Harisankar Karamchand: method decisions (routing design, the request for a generalization fallback and its evaluation), coordination with the organizer on the model rules, model access, review of results.
 
 **Project:** Project 5: From business question to correct answer (Enterprise Data Agent Challenge, TUM x SIXT)
@@ -50,13 +50,14 @@ question ──► Gemma 4 31B router ──► route JSON ──► validator �
 | Gemma 4 31B as router + recipes (`bedrock_mantle/google.gemma-4-31b`, 30.7B parameters) | open | API: SIXT hackathon LLM gateway | 10/10 organizer-solved examples; three votes agree on 400/400 questions | about 770 tokens and 1.6 s of model time per question for three votes; cost not measured | yes: exact arithmetic in code, cheapest use of the model |
 | Gemma 4 31B writing the calculation itself (fallback path, recipes hidden) | open | API: same gateway | 10/10 organizer-solved examples; 58/59 against our recipes in Stage 1; 26/27 on the new Stage 2 question types | about 28,000 tokens and 24 s per question for three generations; cost not measured | fallback and cross-check only: less reliable than a tested recipe and about 37 times the tokens |
 | Gemma 4 31B answering directly from raw tables (model-only baseline) | open | API: same gateway | 3/3 public toy examples (tables of three to five rows) | about 500 tokens per attempt | no: only feasible on tiny tables, and the model would do the arithmetic |
+| Qwen2.5-Coder 3B as router (`qwen2.5-coder:3b`, 3.09B parameters; side trial, Stage 1 only) | open | local: Ollama on a laptop | 190/200 Stage 1 answers identical to the Gemma answers; 5 of the 10 differing answers have the wrong type for the question | not measured | no: less reliable routing; answers not submitted |
 | Keyword parser (no model) | not a model | local | same answers as the Gemma router on 400/400 questions | none | cross-check only: it cannot handle rephrased questions |
 
-Held-out data: the ten organizer-solved practice examples are the only questions with published answers; the 400 scored questions have a private key. No other model was tried, because Gemma 4 31B was the only open-weight model with a published parameter count on the gateway we were given.
+Held-out data: the ten organizer-solved practice examples are the only questions with published answers; the 400 scored questions have a private key. Gemma 4 31B was the only open-weight model with a published parameter count on the gateway we were given. We also tried a much smaller local model, Qwen2.5-Coder 3B, as the router in a side trial on Stage 1 (`qwen_3b_trial/`, see its README). It matched the Gemma answers on 190 of 200 questions; the trial was run by one team member, was not re-run for this report, and its answers are not part of the submission.
 
 Settings: temperature 0.0 for the first vote or generation, 0.4 and 0.7 for later ones; 20 questions per routing request; later votes shuffle the questions into different batches. Details are in `evidence/gemma_4_31b.md`.
 
-The pipeline code was written with an AI coding assistant (Devin, Cognition, powered by Claude Fable 5.2 Medium), used with the organizer's approval. It does not run inside the pipeline. Both models are in `MODEL_DECLARATION.csv`.
+The pipeline code was written with an AI coding assistant (Devin, Cognition, powered by Claude Fable 5.2 Medium), used with the organizer's approval. It does not run inside the pipeline. All three models are in `MODEL_DECLARATION.csv`.
 
 ## Results
 
@@ -188,6 +189,7 @@ These are our own checks, not official feedback.
 | --- | --- | --- |
 | Gemma 4 31B (`bedrock_mantle/google.gemma-4-31b`) | Routes every question (three votes); maps renamed columns; writes the calculation code in the fallback and in the cross-checks | 30.7B (Google model card) |
 | Devin coding agent (Cognition), powered by Claude Fable 5.2 Medium | Coding assistant: method design with the team, pipeline code, the eight Stage 2 recipes, checks and report drafts | Unknown (not published) |
+| Qwen2.5-Coder 3B (`qwen2.5-coder:3b`, Ollama) | Side trial only: router for a Stage 1 run whose answers were not submitted | 3.09B (model card) |
 
 Measured from the gateway's usage fields and wall-clock time per call (`logs/model_usage.csv`):
 
@@ -203,7 +205,7 @@ Most of the day's tokens come from the code-writing experiments, where each call
 
 Bonus claimed: yes
 
-All generative models within scope have at most 40B total parameters: the pipeline model, Gemma 4 31B, has 30.7B. The coding assistant has no published parameter count; its use was approved by the organizer and we leave its treatment to the organizers' verification.
+All generative models within scope have at most 40B total parameters: the pipeline model, Gemma 4 31B, has 30.7B, and the side-trial model, Qwen2.5-Coder 3B, has 3.09B. The coding assistant has no published parameter count; its use was approved by the organizer and we leave its treatment to the organizers' verification.
 
 Evidence locations for model sizes, settings and usage records: `MODEL_DECLARATION.csv`, `evidence/gemma_4_31b.md`, `logs/model_usage.csv`, `public_answers_report_llm.json`, `final_answers_report_llm.json`, `stage2_schema_map.json`.
 

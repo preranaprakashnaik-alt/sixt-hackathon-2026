@@ -1,0 +1,344 @@
+{
+ "account_contract_versions": {
+  "contract_id": "text",
+  "account_id": "text",
+  "revision": "number",
+  "recorded_at": "date",
+  "valid_from": "date",
+  "valid_to": "date",
+  "status": "text",
+  "service_credit_eur": "number",
+  "quarterly_fee_eur": "number",
+  "included_support_minutes": "number"
+ },
+ "accounts": {
+  "account_id": "text",
+  "account_name": "text",
+  "segment": "text",
+  "industry": "text",
+  "account_country": "text",
+  "account_region": "text",
+  "account_manager": "text",
+  "account_start_date": "date",
+  "is_test_account": "bool"
+ },
+ "customers": {
+  "customer_id": "text",
+  "account_id": "text",
+  "email": "text",
+  "country": "text",
+  "region": "text",
+  "acquisition_channel": "text",
+  "signup_date": "date",
+  "trial_start_date": "date",
+  "is_test_customer": "bool"
+ },
+ "employee_regions": {
+  "account_manager": "text",
+  "region": "text",
+  "team_size": "number",
+  "capacity_band": "text"
+ },
+ "flow_cases": {
+  "case_id": "text",
+  "horizon_step": "number",
+  "knowledge_cutoff_step": "number",
+  "first_event_id": "text",
+  "first_action": "text",
+  "first_value": "number",
+  "second_event_id": "empty",
+  "second_action": "empty",
+  "second_value": "number"
+ },
+ "flow_contracts": {
+  "case_id": "text",
+  "customer_id": "text",
+  "version_id": "text",
+  "recorded_step": "number",
+  "priority": "number",
+  "rebate_threshold_units": "number",
+  "rebate_per_unit_cents": "number",
+  "status": "text"
+ },
+ "flow_events": {
+  "case_id": "text",
+  "event_id": "text",
+  "version_id": "text",
+  "recorded_step": "number",
+  "effective_step": "number",
+  "event_type": "text",
+  "product_id": "text",
+  "warehouse": "text",
+  "order_id": "text",
+  "units": "number",
+  "restock": "bool",
+  "status": "text"
+ },
+ "flow_orders": {
+  "case_id": "text",
+  "order_id": "text",
+  "customer_id": "text",
+  "product_id": "text",
+  "warehouse": "text",
+  "release_step": "number",
+  "deadline_step": "number",
+  "units": "number",
+  "unit_price_cents": "number",
+  "unit_cost_cents": "number",
+  "late_penalty_cents": "number",
+  "unfilled_penalty_cents": "number",
+  "cancellation_fee_cents": "number",
+  "return_fee_cents": "number"
+ },
+ "flow_stock": {
+  "case_id": "text",
+  "product_id": "text",
+  "warehouse": "text",
+  "opening_units": "number"
+ },
+ "fx_rates": {
+  "month": "date",
+  "currency": "text",
+  "eur_rate": "number"
+ },
+ "goods_receipts": {
+  "receipt_id": "text",
+  "po_line_id": "text",
+  "received_at": "date",
+  "accepted_units": "number",
+  "rejected_units": "number",
+  "status": "text"
+ },
+ "hard_opt_cases": {
+  "case_id": "text",
+  "day_origin": "date",
+  "notes": "text"
+ },
+ "hard_opt_changes": {
+  "case_id": "text",
+  "change_id": "text",
+  "table_name": "text",
+  "warehouse_region": "text",
+  "product_id": "text",
+  "supplier_id": "text",
+  "dispatch_day": "number",
+  "field": "text",
+  "new_value": "number"
+ },
+ "hard_opt_dispatch": {
+  "case_id": "text",
+  "warehouse_region": "text",
+  "dispatch_day": "number",
+  "capacity_units": "number"
+ },
+ "hard_opt_jobs": {
+  "case_id": "text",
+  "job_id": "text",
+  "product_id": "text",
+  "quantity": "number",
+  "ready_day": "number",
+  "due_day": "number",
+  "last_day": "number",
+  "late_penalty_cents_per_unit_day": "number",
+  "unfilled_penalty_cents": "number"
+ },
+ "hard_opt_options": {
+  "case_id": "text",
+  "option_id": "text",
+  "job_id": "text",
+  "warehouse_region": "text",
+  "supplier_id": "text",
+  "dispatch_day": "number",
+  "variable_cost_cents": "number"
+ },
+ "hard_opt_stock": {
+  "case_id": "text",
+  "warehouse_region": "text",
+  "product_id": "text",
+  "available_units": "number"
+ },
+ "hard_opt_suppliers": {
+  "case_id": "text",
+  "supplier_id": "text",
+  "lead_days": "number",
+  "activation_cost_cents": "number",
+  "minimum_units": "number",
+  "maximum_units": "number",
+  "active": "number"
+ },
+ "inventory_movements": {
+  "movement_id": "text",
+  "product_id": "text",
+  "warehouse_region": "text",
+  "event_at": "date",
+  "movement_type": "text",
+  "units_delta": "number",
+  "source_id": "text",
+  "status": "text"
+ },
+ "marketing_touches": {
+  "touch_id": "text",
+  "customer_id": "text",
+  "touch_date": "date",
+  "marketing_channel": "text",
+  "campaign": "text",
+  "currency": "text",
+  "cost_native": "number"
+ },
+ "order_items": {
+  "order_item_id": "text",
+  "order_id": "text",
+  "product_id": "text",
+  "quantity": "number",
+  "unit_price_native": "number",
+  "line_discount_native": "number"
+ },
+ "orders": {
+  "order_id": "text",
+  "customer_id": "text",
+  "order_date": "date",
+  "order_status": "text",
+  "payment_status": "text",
+  "currency": "text",
+  "coupon_code": "text",
+  "order_level_discount_native": "number",
+  "fraud_flag": "bool",
+  "is_duplicate": "bool",
+  "duplicate_of_order_id": "text",
+  "source_channel": "text"
+ },
+ "payments": {
+  "payment_id": "text",
+  "order_id": "text",
+  "payment_date": "date",
+  "payment_status_detail": "text",
+  "currency": "text",
+  "payment_amount_native": "number"
+ },
+ "product_category_history": {
+  "product_id": "text",
+  "category": "text",
+  "valid_from": "date",
+  "valid_to": "date"
+ },
+ "products": {
+  "product_id": "text",
+  "product_name": "text",
+  "initial_category": "text",
+  "family": "text",
+  "list_price_eur": "number",
+  "standard_cost": "number",
+  "cost_currency": "text",
+  "launch_date": "date"
+ },
+ "promotions": {
+  "campaign": "text",
+  "category": "text",
+  "promo_start": "date",
+  "promo_end": "date",
+  "planned_budget_eur": "number"
+ },
+ "purchase_order_lines": {
+  "po_line_id": "text",
+  "supplier_id": "text",
+  "product_id": "text",
+  "warehouse_region": "text",
+  "ordered_at": "date",
+  "promised_at": "date",
+  "ordered_units": "number",
+  "unit_cost_native": "number",
+  "currency": "text",
+  "status": "text"
+ },
+ "refunds": {
+  "refund_id": "text",
+  "order_id": "text",
+  "product_id": "text",
+  "refund_date": "date",
+  "currency": "text",
+  "refund_amount_native": "number",
+  "refund_status": "text",
+  "refund_reason": "text"
+ },
+ "return_inspections": {
+  "inspection_id": "text",
+  "refund_id": "text",
+  "warehouse_region": "text",
+  "inspected_at": "date",
+  "units_received": "number",
+  "restockable_units": "number",
+  "recovery_unit_value_eur": "number",
+  "disposition": "text",
+  "status": "text"
+ },
+ "sales_targets": {
+  "month": "date",
+  "country": "text",
+  "region": "text",
+  "net_revenue_target_eur": "number"
+ },
+ "shipments": {
+  "shipment_id": "text",
+  "order_id": "text",
+  "carrier": "text",
+  "shipped_at": "date",
+  "promised_delivery_date": "date",
+  "delivered_at": "date",
+  "warehouse_region": "text",
+  "shipping_cost_native": "number",
+  "currency": "text"
+ },
+ "stock_policies": {
+  "product_id": "text",
+  "warehouse_region": "text",
+  "valid_from": "date",
+  "valid_to": "date",
+  "reorder_point": "number",
+  "target_units": "number"
+ },
+ "suppliers": {
+  "supplier_id": "text",
+  "supplier_name": "text",
+  "country": "text",
+  "contract_start": "date",
+  "contract_end": "date",
+  "is_test_supplier": "bool"
+ },
+ "support_tickets": {
+  "ticket_id": "text",
+  "customer_id": "text",
+  "related_order_id": "text",
+  "opened_at": "date",
+  "resolved_at": "date",
+  "issue_type": "text",
+  "priority": "text",
+  "ticket_status": "text",
+  "support_channel": "text",
+  "sentiment_score": "number",
+  "escalated": "bool"
+ },
+ "support_worklogs": {
+  "worklog_id": "text",
+  "ticket_id": "text",
+  "worked_at": "date",
+  "minutes_worked": "number",
+  "hourly_rate_native": "number",
+  "currency": "text",
+  "work_status": "text",
+  "is_billable": "bool"
+ },
+ "warehouse_inventory": {
+  "product_id": "text",
+  "warehouse_region": "text",
+  "on_hand_units": "number",
+  "last_stocktake_date": "date"
+ },
+ "web_sessions": {
+  "session_id": "text",
+  "customer_id": "text",
+  "session_date": "date",
+  "traffic_source": "text",
+  "page_views": "number",
+  "minutes_on_site": "number"
+ }
+}
