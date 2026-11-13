@@ -80,10 +80,11 @@ Limits of this evidence: accuracy on the 200 scored questions is not measured, b
 | Model | Role | Parameters |
 | --- | --- | --- |
 | Gemma 4 31B (`bedrock_mantle/google.gemma-4-31b`) | Routes every question to a recipe and parameters; three votes per question | 30.7B (Google model card) |
+| Devin coding agent (Cognition), powered by Claude Fable 5.2 Medium | Coding assistant: method design with the team, pipeline code, tests and report drafts | Unknown (not published) |
 
 See `MODEL_DECLARATION.csv`, `evidence/gemma_4_31b.md` and `logs/model_usage.csv`.
 
-The pipeline code was written with an AI coding assistant (Devin, Cognition), used with the organizer's approval given on the day; its parameter count is not published. It does not run inside the pipeline and did not produce answers directly.
+The coding assistant was used with the organizer's approval given on the day. It does not run inside the pipeline and did not produce answers directly. Both models are listed in `MODEL_DECLARATION.csv`.
 
 Measured for the final three-vote Stage 1 run: 30 model calls of 20 questions each, about 132,000 prompt tokens and 22,000 completion tokens, about 70 seconds of model time (from the gateway's usage fields and wall-clock time per call, recorded in `logs/model_usage.csv`). Cost: not measured. The deterministic calculation of all 200 answers takes about two minutes on a laptop CPU; memory: not measured.
 
